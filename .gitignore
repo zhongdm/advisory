@@ -2,6 +2,7 @@
 node_modules/
 /dist/
 /dist
+/wd
 
 # Log files
 npm-debug.log*
