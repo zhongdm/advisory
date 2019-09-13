@@ -31,7 +31,7 @@
     <div class="home-sub-menu container">
       <a-row type="flex" justify="space-around">
         <a-col :xs="6" :lg="6 " v-for="(item, index) in subMenuList" :key="index">
-          <div class="list-item bs-nav">
+          <div class="list-item bs-nav" @click="subMenuClick(item)">
             <img :src="item.img" alt="" class="">
             <span>{{item.title}}</span>
           </div>
@@ -141,19 +141,23 @@ export default {
       subMenuList: [
         {
           img: 'static/assets/images/business@2x.png',
-          title: '闻动业务'
+          title: '闻动业务',
+          path: 'business1'
         },
         {
           img: 'static/assets/images/classicCase@2x.png',
-          title: '经典案例'
+          title: '经典案例',
+          path: 'caseList'
         },
         {
           img: 'static/assets/images/news@2x.png',
-          title: '新闻资讯'
+          title: '新闻资讯',
+          path: 'newsList'
         },
         {
           img: 'static/assets/images/aboutUs@2x.png',
-          title: '关于我们'
+          title: '关于我们',
+          path: 'about'
         }
       ],
       businessList: [
@@ -319,6 +323,9 @@ export default {
     },
     showNews (item) {
       this.$router.push('hotNews')
+    },
+    subMenuClick (item) {
+      this.$router.push(item.path)
     }
   },
   components: {

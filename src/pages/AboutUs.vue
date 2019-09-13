@@ -3,7 +3,7 @@
     <section>
       <h3>公司简介</h3>
       <article class="text-indent">
-        闻动顾问管理公司you5咨询行业从业二十年的资深顾问毛雷先生创立，顾问团队由公司CEO等企业经营管理实战经验背景和市场营销管理、人力资源管理、精益生产管理等实战专业背景的资深顾问构成。
+        闻动顾问管理公司由有咨询行业从业二十年的资深顾问毛雷先生创立，顾问团队由公司CEO等企业经营管理实战经验背景和市场营销管理、人力资源管理、精益生产管理等实战专业背景的资深顾问构成。
       </article>
       <article class="text-indent">
         致力于帮助客户解决盈利和增长问题，追求和客户建立结果导向的长期顾问合作伙伴关系。
@@ -144,7 +144,7 @@
       </a-row>
     </section>
     <!-- <hr/> -->
-    <section>
+    <section class="mission-container">
       <a-row type="flex" justify="space-between" :gutter="16">
         <a-col :xs="24" :sm="24" :md="16" :span="16">
           <img src="static/assets/images/culture.jpg" alt="" class="culture-img">
@@ -248,9 +248,17 @@
   }
   .service-container .service-list li .service-item {
     display inline-block
+    text-align left
+    p {
+      text-indent 0
+    }
   }
 }
 
 .text-indent
   text-indent 2em
+
+.mission-container
+  p
+    text-indent 0
 </style>

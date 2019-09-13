@@ -94,7 +94,7 @@ p
   -webkit-box-orient vertical
   -webkit-line-clamp 2
   overflow hidden
-  font-size 1rem
+  font-size .9rem
   color #737373
 img
   width 100%

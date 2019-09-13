@@ -45,17 +45,17 @@ p {
 
 @media screen and (max-width: 760px) {
   #app {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 560px) {
   #app {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
   #app {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
