@@ -69,10 +69,31 @@ p {
 } */
 .web-wrapper {
   max-width: 1000px;
-  margin: auto !important;
+  margin: auto;
   width: 100%;
   padding: 0 1rem !important;
   scroll-behavior:smooth;
   margin-top: 10px;
 }
+
+
 </style>
+
+<style lang="stylus">
+.link-page
+  &:hover
+    cursor pointer
+    box-shadow: 4px 2px 8px rgba(187,184,184,0.2),
+                  -4px 2px 8px rgba(187,184,184,0.2)
+.list-item
+  text-align center
+  margin-top .5rem
+  padding .5rem
+  &:hover
+    cursor pointer
+    // border 1px solid #1890ff
+    border-radius 4px
+    box-shadow: 4px 2px 8px rgba(187,184,184,0.2),
+                  -4px 2px 8px rgba(187,184,184,0.2)
+</style>
+

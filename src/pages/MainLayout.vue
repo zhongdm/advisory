@@ -60,7 +60,7 @@
       </a-anchor> -->
       </div>
     </div>
-    <div class="web-wrapper">
+    <div class="web-wrapper main-container">
     <router-view></router-view>
     </div>
     <div class="footer">
@@ -418,6 +418,9 @@ export default {
   }
   .footer {
     display none
+  }
+  .main-container {
+    margin-top 50px
   }
 }
 

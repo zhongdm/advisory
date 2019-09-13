@@ -1,6 +1,6 @@
 <template>
   <div class="list-container">
-    <div class="main-news" v-if="newsList.length > 0">
+    <div class="main-news list-item" v-if="newsList.length > 0">
       <a-row type="flex">
         <a-col :span="24">
       <img :src="newsList[0].img" alt="" class="icon-img">
@@ -16,7 +16,7 @@
     <div class="news-container">
       <a-row type="flex">
         <a-col :xs="24" :lg="12" :md="12" v-for="(item, index) in newsList.slice(1)" :key="index">
-          <div class="news-item">
+          <div class="news-item list-item">
             <a-row type="flex">
             <a-col :span="10">
             <img :src="item.img" alt="">
@@ -40,7 +40,7 @@ export default {
   data () {
     return {
       newsList: [{
-        img: 'static/assets/images/bs-web1.jpg',
+        img: 'static/assets/images/bs-web7.jpg',
         title: '某大型现代化视频企业人才盘点项目',
         content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
       },{
@@ -64,9 +64,9 @@ export default {
   .main-news
     .main-news-detail
       margin-top 8px
+      text-align left
   .news-container
     font-size 1.2rem
-    margin-top 1rem
     margin-bottom 1rem
     .news-item
       margin .8rem auto
@@ -76,6 +76,7 @@ export default {
       display inline-block
       margin 0 10px
       vertical-align middle
+      text-align left
 
 h4
   font-size 1rem

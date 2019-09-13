@@ -29,10 +29,10 @@
       </a-carousel>
     </div>
     <div class="home-sub-menu container">
-      <a-row type="flex" justify="space-around" :gutter="16">
+      <a-row type="flex" justify="space-around">
         <a-col :xs="6" :lg="6 " v-for="(item, index) in subMenuList" :key="index">
-          <div class="list-item">
-            <img :src="item.img" alt="" class="" style="width:4rem;">
+          <div class="list-item bs-nav">
+            <img :src="item.img" alt="" class="">
             <span>{{item.title}}</span>
           </div>
         </a-col>
@@ -56,8 +56,8 @@
     <div class="client-container" id="client">
       <h3><img src="static/assets/images/client@2x.png" alt="" class="icon-img">合作客户</h3>
       <div>
-        <a-row type="flex" justify="left" :gutter="16">
-          <a-col :xs="4" :lg="4" v-for="(item, index) in clientList" :key="index">
+        <a-row type="flex" justify="start" :gutter="16">
+          <a-col :xs="12" :md="6" :lg="4" v-for="(item, index) in clientList" :key="index">
             <div class="list-item client-item">
               <img :src="item.img" alt="" :title="item.name" class="mini-img">
             </div>
@@ -119,7 +119,7 @@
       <a href="javascript:void(0)" @click="$router.push('newsList')" class="more-link" style="float:right;">更多>></a></h3>
       
       <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
-        <img src="static/assets/images/business1@3x.png" alt="">
+        <img :src="newsList[0].img" alt="">
         <h4>{{newsList[0].title}}</h4>
         <p>{{newsList[0].abstract}}</p>
       </div>
@@ -285,7 +285,7 @@ export default {
       newsList: [
         {
           title: '闻动顾问之江苏益和股权激励项目顺利启动！',
-          img: '',
+          img: 'static/assets/images/bs-web7.jpg',
           abstract: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。'
         },
         {
@@ -336,6 +336,12 @@ export default {
   line-height: 300px;
   background: #364d79;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .ant-carousel >>> .slick-slide {
+    height: 200px;
+    line-height: 200px;
+  }
 }
 
 .ant-carousel >>> .slick-slide h3 {
@@ -404,7 +410,11 @@ export default {
     margin-top .5rem
     display block
 
-
+.bs-nav
+  img
+    width 3.5rem
+  span
+    font-size .8rem
 .home-sub-menu
   // display none
   margin-top 20px
@@ -524,11 +534,6 @@ export default {
 a:hover
   cursor pointer
 
-@media screen and (max-width: 576px) {
-  .home-sub-menu img {
-    width 80%
-  }
-}
 
 @media screen and (max-width: 768px) {
   .home-sub-menu {
