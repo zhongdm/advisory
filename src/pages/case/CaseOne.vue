@@ -20,7 +20,7 @@
       <p>然后利用多种方式手段对营销部门和制造中心管理层和基层人员分别进行了系统的评估，深入了解两部门人员能力及特点； 最后筛选出两个部门的高潜质管理人才，并提出了 有针对性的培养发展建议，并对两个部门的低潜管理人员进行了识别。</p>
     </div>
     <!-- <img src="@/assets/images/caseOne.png" alt="" style="width:100%;margin: 1rem 0;"> -->
-    <a-row type="flex" class="spirit-img" justify="left">
+    <a-row type="flex" class="spirit-img" justify="start">
       <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="first-img"></span></div></a-col>
       <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="second-img"></span></div></a-col>
       <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="third-img"></span></div></a-col>
