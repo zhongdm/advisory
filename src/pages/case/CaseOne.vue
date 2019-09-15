@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="detail-wrapper wrapper">
-    <img class="mobile-img" src="static/assets/images/business1@2x.png" alt="">
+    <img class="mobile-img" src="@/assets/images/business1@2x.png" alt="">
     <h3 class="detail-title">某大型现代化视频企业人才盘点项目</h3>
     <div>
       <h4>项目背景</h4>
@@ -14,7 +14,13 @@
       <p>首先以公司战略和新业务拓展需求为核心，为J公司构建了面向未来具有J公司特色的胜任力模型。</p>
       <p>然后利用多种方式手段对营销部门和制造中心管理层和基层人员分别进行了系统的评估，深入了解两部门人员能力及特点； 最后筛选出两个部门的高潜质管理人才，并提出了 有针对性的培养发展建议，并对两个部门的低潜管理人员进行了识别。</p>
     </div>
-    <img src="static/assets/images/prjFlow.png" alt="" style="width:100%;margin: 1rem 0;">
+    <!-- <img src="@/assets/images/caseOne.png" alt="" style="width:100%;margin: 1rem 0;"> -->
+    <a-row type="flex" class="spirit-img" justify="space-between">
+      <a-col :xs="24" :md="6"><span class="first-img"></span></a-col>
+      <a-col :xs="24" :md="6"><span class="second-img"></span></a-col>
+      <a-col :xs="24" :md="6"><span class="third-img"></span></a-col>
+      <a-col :xs="24" :md="6"><span class="forth-img"></span></a-col>
+    </a-row>
     </div>
     <!-- <bottom-menu></bottom-menu> -->
   </div>
@@ -69,4 +75,25 @@ export default {
   .qs-list, .content-info, .contact-info {
     font-size: .9rem;
   }
+</style>
+
+<style lang="stylus" scoped>
+.spirit-img
+  span
+    background url('../../assets/images/caseOne.png') no-repeat
+    display block
+    // background-position 0 0
+    background-size cover
+    width 200px
+    height 190px
+    margin auto
+    &.first-img
+      background-position 0 -170px
+    &.second-img
+      background-position 0 -365px
+    &.third-img
+      background-position 0 -560px
+      height 170px
+    &.forth-img
+      background-position 0 -725px
 </style>

@@ -2,9 +2,9 @@
 <div>
   <div class="detail-wrapper wrapper">
     <picture>
-      <source class="mobile-img" srcset="static/assets/images/business3@2x.png" media="(max-width: 768px)">
-      <source class="mobile-img" srcset="static/assets/images/bs-web3.jpg" media="(min-width: 769px)">
-      <img class="mobile-img" srcset="static/assets/images/bs-web3.png" alt="pic">
+      <source class="mobile-img" srcset="@/assets/images/business3@2x.png" media="(max-width: 768px)">
+      <source class="mobile-img" srcset="@/assets/images/bs-web3.jpg" media="(min-width: 769px)">
+      <img class="mobile-img" srcset="@/assets/images/bs-web3.jpg" alt="pic">
     </picture>
     <h3 class="detail-title">企业文化顾问</h3>
     <div>

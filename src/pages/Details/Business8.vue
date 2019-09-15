@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="detail-wrapper wrapper">
-    <img class="mobile-img" src="static/assets/images/business1@2x.png" alt="">
+    <img class="mobile-img" src="@/assets/images/business1@2x.png" alt="">
     <h3 class="detail-title">发展战略顾问</h3>
     <div>
       <h4>管理困局</h4>

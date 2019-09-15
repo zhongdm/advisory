@@ -2,9 +2,9 @@
 <div>
   <div class="detail-wrapper wrapper">
     <picture>
-      <source class="mobile-img" srcset="static/assets/images/business7@2x.png" media="(max-width: 768px)">
-      <source class="mobile-img" srcset="static/assets/images/bs-web7.jpg" media="(min-width: 769px)">
-      <img class="mobile-img" srcset="static/assets/images/bs-web7.jpg" alt="pic">
+      <source class="mobile-img" srcset="@/assets/images/business7@2x.png" media="(max-width: 768px)">
+      <source class="mobile-img" srcset="@/assets/images/bs-web7.jpg" media="(min-width: 769px)">
+      <img class="mobile-img" srcset="@/assets/images/bs-web7.jpg" alt="pic">
     </picture>
     <h3 class="detail-title">闻动会员服务介绍</h3>
     <div>

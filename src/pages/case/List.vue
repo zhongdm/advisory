@@ -1,6 +1,7 @@
 <template>
   <div class="list-container">
-    <div class="main-news list-item" v-if="newsList.length > 0">
+    <div class="main-news list-item" v-if="newsList.length > 0"
+      @click="clickCase(newsList[0])">
       <a-row type="flex">
         <a-col :span="24">
       <img :src="newsList[0].img" alt="" class="icon-img">
@@ -16,7 +17,8 @@
     <div class="news-container">
       <a-row type="flex">
         <a-col :xs="24" :lg="12" :md="12" v-for="(item, index) in newsList.slice(1)" :key="index">
-          <div class="news-item list-item">
+          <div class="news-item list-item"
+          @click="clickCase(item)">
             <a-row type="flex">
             <a-col :span="10">
             <img :src="item.img" alt="">
@@ -40,19 +42,26 @@ export default {
   data () {
     return {
       newsList: [{
-        img: 'static/assets/images/bs-web7.jpg',
+        img: require('@/assets/images/bs-web7.jpg'),
         title: '某大型现代化视频企业人才盘点项目',
-        content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
+        content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。',
+        path: 'caseOne'
       },{
-        img: 'static/assets/images/business1@2x.png',
+        img: require('@/assets/images/business1@2x.png'),
         title: '某宠物用品公司股权激励项目',
-        content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。'
-      },
-      {
-        img: 'static/assets/images/business1@2x.png',
-        title: '某宠物用品公司股权激励项目',
-        content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。'
+        content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。',
+        path: 'caseTwo'
+      // },
+      // {
+      //   img: require('@/assets/images/business1@2x.png'),
+      //   title: '某宠物用品公司股权激励项目',
+      //   content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。'
       }]
+    }
+  },
+  methods: {
+    clickCase (item) {
+      this.$router.push(item.path)
     }
   }
 }

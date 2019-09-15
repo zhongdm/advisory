@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="detail-wrapper wrapper">
-    <img class="mobile-img" src="static/assets/images/business1@2x.png" alt="">
+    <img class="mobile-img" src="@/assets/images/business1@2x.png" alt="">
     <h3 class="detail-title">某宠物用品公司股权激励项目</h3>
     <div>
       <h4>项目背景</h4>
@@ -13,10 +13,10 @@
       <h4>解决方法</h4>
       <p>首先对Y公司内影响股权激励成功实施的要素进行了盘点；</p>
       <p>诊断出其股权激励实施的成功概率；</p>
+      <img src="@/assets/images/caseTwo.png" alt="" class="case-second">
       <p>然后帮助企业对其不足之处进行了完善；</p>
       <p>最后帮助Y公司制定了股权激励方案及股权激励相关制度和文件，并协助其进行实施落地。</p>
     </div>
-    <img src="static/assets/images/prjFlow.png" alt="" style="width:100%;margin: 1rem 0;">
     </div>
     <!-- <bottom-menu></bottom-menu> -->
   </div>
@@ -71,4 +71,20 @@ export default {
   .qs-list, .content-info, .contact-info {
     font-size: .9rem;
   }
+  .case-second {
+    width: 60%;
+    margin: 1rem auto;
+    display: block;
+  }
+@media screen and (max-width: 560px) {
+  .case-second {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .case-second {
+    width: 100%;
+  }
+}
 </style>
+

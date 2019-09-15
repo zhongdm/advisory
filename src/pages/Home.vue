@@ -21,10 +21,10 @@
           <a-icon type="right-circle" />
         </div>
         <div>
-          <img src="static/assets/images/ca1.jpeg" alt="">
+          <img src="@/assets/images/ca1.jpeg" alt="">
         </div>
         <div>
-          <img src="static/assets/images/ca2.jpeg" alt="">
+          <img src="@/assets/images/ca2.jpeg" alt="">
         </div>
       </a-carousel>
     </div>
@@ -41,7 +41,7 @@
     <div class="seperator home-sub-menu"></div>
     <div class="business-container" id="business">
       <h3>
-        <img src="static/assets/images/icon-bs.png" alt="" class="icon-img">闻动业务</h3>
+        <img src="@/assets/images/icon-bs.png" alt="" class="icon-img">闻动业务</h3>
       <div>
         <a-row type="flex" justify="space-between" :gutter="16">
           <a-col :xs="12" :lg="6" v-for="(item, index) in businessList" :key="index">
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="client-container" id="client">
-      <h3><img src="static/assets/images/client@2x.png" alt="" class="icon-img">合作客户</h3>
+      <h3><img src="@/assets/images/client@2x.png" alt="" class="icon-img">合作客户</h3>
       <div>
         <a-row type="flex" justify="start" :gutter="16">
           <a-col :xs="12" :md="6" :lg="4" v-for="(item, index) in clientList" :key="index">
@@ -67,7 +67,7 @@
     </div>
     <div class="seperator"></div>
     <div class="case-container container" id="case">
-      <h3><img src="static/assets/images/icon-case@2x.png" alt="" class="icon-img">经典案例
+      <h3><img src="@/assets/images/icon-case@2x.png" alt="" class="icon-img">经典案例
       <a href="javascript:void(0)" @click="$router.push('caseList')" class="more-link" style="float:right;">更多>></a></h3>
       <div class="case-wrapper">
         <div class="case-info">
@@ -87,7 +87,7 @@
     </div>
     <div class="seperator"></div>
     <div class="library-container container" style="display:none;">
-      <h3><img src="static/assets/images/icon-zk@2x.png" alt="" class="icon-img">闻动智库</h3>
+      <h3><img src="@/assets/images/icon-zk@2x.png" alt="" class="icon-img">闻动智库</h3>
       <div class="case-wrapper">
         <div class="case-info" :style="{width: libraryWidth}">
           <div
@@ -115,18 +115,31 @@
     </div>
     <div class="seperator"></div>
     <div class="news-container container" id="news">
-      <h3><img src="static/assets/images/icon-news@2x.png" alt="" class="icon-img">新闻资讯
+      <h3><img src="@/assets/images/icon-news@2x.png" alt="" class="icon-img">新闻资讯
       <a href="javascript:void(0)" @click="$router.push('newsList')" class="more-link" style="float:right;">更多>></a></h3>
       
-      <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
-        <img :src="newsList[0].img" alt="">
-        <h4>{{newsList[0].title}}</h4>
-        <p>{{newsList[0].abstract}}</p>
-      </div>
-      <!-- <div class="news-list"> -->
-        <ul class="news-list" v-for="(item, index) in newsList.slice(1)" :key="index">
-          <li><a>{{item.title}}</a><a-icon class="icon" type="right" /></li>
-        </ul>
+      <a-row type="flex" :gutter="16">
+          <a-col :xs="24" :md="12">
+            <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
+              <img :src="newsList[0].img" alt="">
+              <h4>{{newsList[0].title}}</h4>
+              <p>{{newsList[0].abstract}}</p>
+            </div>
+            <ul class="news-list">
+              <li v-for="(item, index) in newsList.slice(1, 3)" :key="index"><a @click="showNews(item)">{{item.title}}</a><a-icon class="icon" type="right" /></li>
+            </ul>
+          </a-col>
+          <a-col :xs="0" :md="12">
+            <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[3])">
+              <img :src="newsList[3].img" alt="">
+              <h4>{{newsList[3].title}}</h4>
+              <p>{{newsList[3].abstract}}</p>
+            </div>
+            <ul class="news-list">
+              <li v-for="(item, index) in newsList.slice(4)" :key="index"><a @click="showNews(item)">{{item.title}}</a><a-icon class="icon" type="right" /></li>
+            </ul>
+          </a-col>
+        </a-row>
       <!-- </div> -->
     </div>
     </div>
@@ -135,153 +148,159 @@
 </template>
 
 <script>
+import eventBus from '../common/eventBus.js'
+
 export default {
   data () {
     return {
       subMenuList: [
         {
-          img: 'static/assets/images/business@2x.png',
+          img: require('@/assets/images/business@2x.png'),
           title: '闻动业务',
+          key: 'business',
           path: 'business1'
         },
         {
-          img: 'static/assets/images/classicCase@2x.png',
+          img: require('@/assets/images/classicCase@2x.png'),
           title: '经典案例',
-          path: 'caseList'
+          path: 'caseList',
+          key: 'case',
         },
         {
-          img: 'static/assets/images/news@2x.png',
+          img: require('@/assets/images/news@2x.png'),
           title: '新闻资讯',
-          path: 'newsList'
+          path: 'newsList',
+          key: 'news',
         },
         {
-          img: 'static/assets/images/aboutUs@2x.png',
+          img: require('@/assets/images/aboutUs@2x.png'),
           title: '关于我们',
-          path: 'about'
+          path: 'about',
+          key: 'about',
         }
       ],
       businessList: [
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           title: '盈利增长顾问'
         },
         {
-          img: 'static/assets/images/business2@2x.png',
+          img: require('@/assets/images/business2@2x.png'),
           title: '发展战略顾问'
         },
         {
-          img: 'static/assets/images/business3@2x.png',
+          img: require('@/assets/images/business3@2x.png'),
           title: '企业文化顾问'
         },
         {
-          img: 'static/assets/images/business4@2x.png',
+          img: require('@/assets/images/business4@2x.png'),
           title: '组织能力顾问'
         },
         {
-          img: 'static/assets/images/business5@2x.png',
+          img: require('@/assets/images/business5@2x.png'),
           title: '高管圆桌会'
         },
         {
-          img: 'static/assets/images/business6@2x.png',
+          img: require('@/assets/images/business6@2x.png'),
           title: '闻动私董会'
         },
         {
-          img: 'static/assets/images/business7@2x.png',
+          img: require('@/assets/images/business7@2x.png'),
           title: '闻动企业会员'
         },
-        {
-          img: 'static/assets/images/business8@2x.png',
-          title: '智慧城市与科技信息化'
-        }
+        // {
+        //   img: require('@/assets/images/business8@2x.png'),
+        //   title: '智慧城市与科技信息化'
+        // }
       ],
       clientList: [
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/green.jpg'
+          name: '绿地集团',
+          img: require('@/assets/images/logo/green.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/nanqi.jpg'
+          name: '南汽集团',
+          img: require('@/assets/images/logo/nanqi.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/lswe.jpg'
+          name: '罗思韦尔电气/控股集团',
+          img: require('@/assets/images/logo/lswe.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/sujiaoke.jpg'
+          name: '苏交科-燕宁工科集团',
+          img: require('@/assets/images/logo/sujiaoke.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/zhongshihua.jpg'
+          name: '中国石化',
+          img: require('@/assets/images/logo/zhongshihua.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/zhongche.jpg'
+          name: '中车集团',
+          img: require('@/assets/images/logo/zhongche.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/kerui.jpg'
+          name: '上海科瑞物业',
+          img: require('@/assets/images/logo/kerui.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/yihe.jpg'
+          name: '益和宠物',
+          img: require('@/assets/images/logo/yihe.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/xincheng.jpg'
+          name: '新城股份',
+          img: require('@/assets/images/logo/xincheng.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/dx.jpg'
+          name: '中国电信',
+          img: require('@/assets/images/logo/dx.jpg')
         },
         {
-          name: 'aa',
-          img: 'static/assets/images/logo/bingqi.jpg'
+          name: '中国兵器',
+          img: require('@/assets/images/logo/bingqi.jpg')
         }
       ],
       caseList: [
         {
           path: 'caseone',
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           title: '某大型现代化视频企业人才盘点项目',
           content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
         },
         {
           path: 'casetwo',
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           title: '某宠物用品公司股权激励项目',
           content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。'
         }
       ],
       personList: [
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           name: 'Jack',
           professionalTitle: '专家智慧团队'
         },
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           name: 'Jack',
           professionalTitle: '专家智慧团队'
         },
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           name: 'Jack',
           professionalTitle: '专家智慧团队'
         },
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           name: 'Jack',
           professionalTitle: '专家智慧团队'
         },
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           name: 'Jack',
           professionalTitle: '专家智慧团队'
         },
         {
-          img: 'static/assets/images/business1@2x.png',
+          img: require('@/assets/images/business1@2x.png'),
           name: 'Jack',
           professionalTitle: '专家智慧团队'
         }
@@ -289,17 +308,32 @@ export default {
       newsList: [
         {
           title: '闻动顾问之江苏益和股权激励项目顺利启动！',
-          img: 'static/assets/images/bs-web7.jpg',
-          abstract: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。'
+          img: require('@/assets/images/hotNew-1.jpeg'),
+          abstract: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。',
+          path: 'hotNews'
         },
         {
-          title: '闻动增长研习社之南京天众增长主题研习活动圆满完成'
+          title: '闻动增长研习社之南京天众增长主题研习活动圆满完成',
+          path: 'news1'
         },
         {
-          title: '7月[闻动]会员企业增长演习社活动纪实'
+          title: '7月[闻动]会员企业增长演习社活动纪实',
+          path: 'news2'
         },
-         {
-          title: '如何实现客户增长'
+        {
+          title: '闻动私董会走进苏企联',
+          img: require('@/assets/images/news5/4.jpeg'),
+          path: 'news5',
+          abstract: '以“服务江苏企业、发展江苏企业、成就江苏企业”为使命，实现所有企业家成员的共建、共享、共赢。'
+        },
+        {
+          title: '如何实现客户增长',
+          path: 'news3'
+        },
+        {
+          title: '闻动第七期私董会圆满成功！',
+          img: require('@/assets/images/news6/2.jpeg'),
+          path: 'news6'
         }
       ]
       // libraryWidth: 8 * this.personList.length + 'rem'
@@ -317,14 +351,19 @@ export default {
   methods: {
     clickBusiness (item, index) {
       this.$router.push('business' + index)
+      eventBus.$emit('selectedMenu', 'business')
     },
     caseClick (item) {
       this.$router.push(item.path)
+      eventBus.$emit('selectedMenu', 'case')
     },
     showNews (item) {
-      this.$router.push('hotNews')
+      // this.$router.push('hotNews')
+      this.$router.push(item.path)
+      eventBus.$emit('selectedMenu', 'news')
     },
     subMenuClick (item) {
+      eventBus.$emit('selectedMenu', item.key)
       this.$router.push(item.path)
     }
   },
@@ -474,7 +513,7 @@ export default {
         color #8f8f8f
 .hot-news
   border-bottom 1px solid #eee
-  padding-bottom 1rem
+  // padding-bottom 1rem
   &:hover
     cursor pointer
     // border 1px solid #1890ff
@@ -482,10 +521,11 @@ export default {
                   -4px 2px 8px rgba(187,184,184,0.2)
   img
     width 100%
+    height 15rem
   h4
-    margin 1rem 0 6px 1rem
+    margin 1rem 0 6px 5px
   p
-    margin-left 1rem
+    margin-left 5px
     text-indent 0
     font-size .9rem
     color #8f8f8f
@@ -499,6 +539,7 @@ export default {
     border-bottom 1px solid #eee
     position relative
     font-size 0
+    color #ddd
     &:before
       content '■'
       color blue
@@ -506,9 +547,9 @@ export default {
       position absolute
       left 0
       top 50%
-      width 20px
+      width 14px
       margin-top -.9rem
-      font-size 1rem
+      font-size .9rem
     &:hover
       background-color #f8f8f8
     a

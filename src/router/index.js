@@ -8,7 +8,11 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Login',
+      redirect: 'about'
+    },,
+    {
+      path: '/home',
+      name: 'Home',
       component: () => import('@/pages/Home')
     },
     {
@@ -74,13 +78,39 @@ const router = new Router({
     {
       path: '/newsList',
       name: 'NewsList',
-      component: () => import('@/pages/news/List')
+      component: () => import('@/pages/news/List'),
     },
     {
       path: '/hotNews',
       name: 'HotNews',
       component: () => import('@/pages/news/HotNews.vue')
-    }
+    },
+    {
+      path: '/news1',
+      name: 'News1',
+      component: () => import('@/pages/news/News1.vue')
+    },
+    {
+      path: '/news2',
+      name: 'News2',
+      component: () => import('@/pages/news/News2.vue')
+    },
+    {
+      path: '/news3',
+      name: 'News3',
+      component: () => import('@/pages/news/News3.vue')
+    },
+    {
+      path: '/news5',
+      name: 'News5',
+      component: () => import('@/pages/news/News5.vue')
+    },
+    {
+      path: '/news6',
+      name: 'News6',
+      component: () => import('@/pages/news/News6.vue')
+    },
+    
   ]
 })
 

@@ -14,19 +14,19 @@
       <a-row>
         <a-col :span="8">
           <a-button block  type="link" blocktype="primary">
-            <img src="static/assets/images/tel@2x.png" alt="">
+            <img src="@/assets/images/tel@2x.png" alt="">
             <span>电话咨询</span>
           </a-button>
         </a-col>
         <a-col :span="8">
         <a-button block  type="link">
-          <img src="static/assets/images/nav@2x.png" alt="">
+          <img src="@/assets/images/nav@2x.png" alt="">
           <span>地址导航</span>
         </a-button>
         </a-col>
         <a-col :span="8">
         <a-button block type="link">
-          <img src="static/assets/images/share@2x.png" alt="">
+          <img src="@/assets/images/share@2x.png" alt="">
           <span>分享我们</span>
         </a-button>
         </a-col>

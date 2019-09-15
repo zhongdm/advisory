@@ -34,6 +34,7 @@ export default {
 }
 p {
   text-indent: 2em;
+  /* line-height: 2.5rem; */
 }
 @media screen and (max-width: 1000px) {
   #app {
@@ -68,12 +69,13 @@ p {
   width: 100%;
 } */
 .web-wrapper {
-  max-width: 1000px;
+  max-width: 800px;
   margin: auto;
   width: 100%;
   padding: 0 1rem !important;
   scroll-behavior:smooth;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  margin-bottom: 0 !important;
 }
 
 

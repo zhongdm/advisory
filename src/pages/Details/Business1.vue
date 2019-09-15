@@ -2,11 +2,11 @@
 <div>
   <div class="detail-wrapper wrapper">
     <picture>
-      <source class="mobile-img" srcset="static/assets/images/business1@2x.png" media="(max-width: 768px)">
-      <source class="mobile-img" srcset="static/assets/images/bs-web1.jpg" media="(min-width: 769px)">
-      <img class="mobile-img" srcset="static/assets/images/business1@2x.png" alt="pic">
+      <source class="mobile-img" srcset="@/assets/images/business1@2x.png" media="(max-width: 768px)">
+      <source class="mobile-img" srcset="@/assets/images/bs-web1.jpg" media="(min-width: 769px)">
+      <img class="mobile-img" srcset="@/assets/images/business1@2x.png" alt="pic">
     </picture>
-    <!-- <img class="mobile-img" src="static/assets/images/business1@2x.png" alt=""> -->
+    <!-- <img class="mobile-img" src="@/assets/images/business1@2x.png" alt=""> -->
     <h3 class="detail-title">盈利增长顾问</h3>
     <div>
       <h4>管理困局</h4>
@@ -23,7 +23,7 @@
       <h4>顾问方法</h4>
       <section>
         <p>基于“收入-成本=利润”的增长基本公式，从扩大收入和降低无效成本两方面入手帮助企业实现目标。</p>
-        <img src="static/assets/images/analysis.png" alt="" class="block-img">
+        <img src="@/assets/images/analysis.png" alt="" class="block-img">
 
       </section>
       <!-- <section class="content-item">
@@ -104,6 +104,18 @@ export default {
   .block-img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
   }
+
+@media screen and (max-width: 768px) {
+  .block-img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .block-img {
+    width: 70%;
+  }
+}
+
 </style>

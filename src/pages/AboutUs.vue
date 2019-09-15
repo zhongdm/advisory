@@ -19,7 +19,7 @@
           <section>
           <a-row type="flex">
             <a-col :xs="8" :sm="8" :md="24">
-              <img src="static/assets/images/service_icon1.png" class="circle-img" alt="">
+              <img src="@/assets/images/service_icon1.png" class="circle-img" alt="">
               <h4>企业增长项目</h4>
             </a-col>
             <a-col :xs="16" :sm="16" :md="24">
@@ -35,7 +35,7 @@
           <section>
             <a-row type="flex">
               <a-col :xs="8" :sm="8"  :md="24">
-            <img src="static/assets/images/service_icon2.png" class="circle-img" alt="">
+            <img src="@/assets/images/service_icon2.png" class="circle-img" alt="">
             <h4>高管圆桌汇</h4>
           </a-col>
           <a-col :xs="16" :sm="16" :md="24">
@@ -51,7 +51,7 @@
           <section>
             <a-row type="flex">
               <a-col :xs="8" :sm="8" :md="24">
-          <img src="static/assets/images/service_icon3.png" class="circle-img" alt="">
+          <img src="@/assets/images/service_icon3.png" class="circle-img" alt="">
           <h4>发展战略</h4>
           </a-col>
             <a-col :xs="16" :sm="16" :md="24">
@@ -66,7 +66,7 @@
           <section>
             <a-row type="flex">
               <a-col :xs="8" :sm="8"  :md="24">
-          <img src="static/assets/images/service_icon4.png" class="circle-img" alt="">
+          <img src="@/assets/images/service_icon4.png" class="circle-img" alt="">
           <h4>组织能力</h4>
           </a-col>
             <a-col :xs="16" :sm="16" :md="24">
@@ -82,7 +82,7 @@
           <section>
             <a-row type="flex">
               <a-col :xs="8" :sm="8"  :md="24">
-          <img src="static/assets/images/service_icon5.png" class="circle-img" alt="">
+          <img src="@/assets/images/service_icon5.png" class="circle-img" alt="">
           <h4>企业文化</h4>
           </a-col>
             <a-col :xs="16" :sm="16" :md="24">
@@ -103,13 +103,13 @@
       </article>
       <a-row type="flex" justify="space-between" :gutter="16">
         <a-col :xs="24" :sm="24" :md="8" :span="8">
-          <img src="static/assets/images/service_who1.jpg" alt="">
+          <img src="@/assets/images/service_who1.jpg" alt="">
         </a-col>
         <a-col :xs="24" :sm="24" :md="8"  :span="8">
-          <img src="static/assets/images/service_who2.jpg" alt="">
+          <img src="@/assets/images/service_who2.jpg" alt="">
         </a-col>
         <a-col :xs="24" :sm="24"  :md="8" :span="8">
-          <img src="static/assets/images/service_who3.jpg" alt="">
+          <img src="@/assets/images/service_who3.jpg" alt="">
         </a-col>
       </a-row>
     </section>
@@ -124,7 +124,7 @@
             <span>
               <em>40%</em>国有企业
             </span>
-            <img src="static/assets/images/service_country.jpg" alt="">
+            <img src="@/assets/images/service_country.jpg" alt="">
             <p class="text-indent">
               我们服务的国企行业包括制造业、电信及是有天然气等。我们帮助他们完成对子公司的管控，组织结构及管理流程的变革以适应发展战略的需要。
             </p>
@@ -135,7 +135,7 @@
             <span>
               <em>60%</em>国有企业
             </span>
-            <img src="static/assets/images/service_self.jpg" alt="">
+            <img src="@/assets/images/service_self.jpg" alt="">
             <p class="text-indent">
               我们服务的国企行业包括制造业、电信及是有天然气等。我们帮助他们完成对子公司的管控，组织结构及管理流程的变革以适应发展战略的需要。
             </p>
@@ -147,10 +147,10 @@
     <section class="mission-container">
       <a-row type="flex" justify="space-between" :gutter="16">
         <a-col :xs="24" :sm="24" :md="16" :span="16">
-          <img src="static/assets/images/culture.jpg" alt="" class="culture-img">
+          <img src="@/assets/images/culture.jpg" alt="" class="culture-img">
         </a-col>
         <a-col :xs="24" :sm="24" :md="8" :span="8">
-          <div>
+          <div class="content-list">
             <h4>我们的使命</h4>
             <p>帮助客户实现盈利和增长</p>
           </div>
@@ -227,9 +227,9 @@
     margin-top 1rem
 
 .about-container > section
-  // padding-bottom 2rem
   margin-bottom 2rem
-  // border-bottom 1px solid #ddd
+  h3
+    margin-top 1rem
 
 .culture-img
   width 100%
@@ -255,8 +255,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content-list {
+    margin-top 1rem
+  }
+}
+
 .text-indent
   text-indent 2em
+  line-height 1.7rem
 
 .mission-container
   p

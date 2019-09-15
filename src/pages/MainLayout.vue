@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper-container">
     <div class="nav-bar mobile-bar">
-      <img src="static/assets/images/logo@2x.png" class="icon-img" alt="">
+      <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
       <span class="title">闻动顾问管理有限公司</span>
-      <img src="static/assets/images/menu@2x.png" class="menu-list" alt="" @click="showMenu">
+      <img src="@/assets/images/menu@2x.png" class="menu-list" alt="" @click="showMenu">
       <a-menu
         class="menu-container"
         v-show="menuVisible"
@@ -23,7 +23,7 @@
     </div>
     <div class="web-bar">
       <div class="web-header web-wrapper">
-        <img src="static/assets/images/logo@2x.png" class="icon-img" alt="">
+        <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
         <div class="web-title">
           <h2 style="margin: 0">闻动顾问管理有限公司</h2>
           <!-- <span>WENDONG ENTERPRISE MANAGEMENT CONSULTANTS LTD.</span> -->
@@ -76,34 +76,34 @@
         <div class="footer-item">
           <h4>闻动业务</h4>
           <ul>
-            <li><a href="javascript:void(0);">盈利增长顾问</a></li>
-            <li><a href="javascript:void(0);">发展战略顾问</a></li>
-            <li><a href="javascript:void(0);">组织能力顾问</a></li>
-            <li><a href="javascript:void(0);">企业文化顾问</a></li>
-            <li><a href="javascript:void(0);">高管圆桌会</a></li>
-            <li><a href="javascript:void(0);">闻动私董会</a></li>
-            <li><a href="javascript:void(0);">闻动企业会员</a></li>
-            <li><a href="javascript:void(0);">智慧城市与科技信息化</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">盈利增长顾问</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business2', 'business')">发展战略顾问</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business3', 'business')">组织能力顾问</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business4', 'business')">企业文化顾问</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business5', 'business')">高管圆桌会</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business6', 'business')">闻动私董会</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business7', 'business')">闻动企业会员</a></li>
+            <!-- <li><a href="javascript:void(0);">智慧城市与科技信息化</a></li> -->
           </ul>
         </div>
         <div class="footer-item">
           <h4>案例展示</h4>
           <ul>
-            <li><a href="javascript:void(0);">合作客户</a></li>
-            <li><a href="javascript:void(0);">经典案例</a></li>
+            <!-- <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">合作客户</a></li> -->
+            <li><a href="javascript:void(0);" @click="footerClick('caseList', 'case')">经典案例</a></li>
           </ul>
         </div>
         <div class="footer-item">
           <h4>资讯中心</h4>
           <ul>
-            <li><a href="javascript:void(0);">新闻资讯</a></li>
-            <li><a href="javascript:void(0);">闻动智库</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('newsList', 'news')">新闻资讯</a></li>
+            <!-- <li><a href="javascript:void(0);">闻动智库</a></li> -->
           </ul>
         </div>
         <div class="footer-item">
           <h4>关于我们</h4>
           <ul>
-            <li><a href="javascript:void(0);">关于我们</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('about', 'about')">关于我们</a></li>
           </ul>
         </div>
       </section>
@@ -117,11 +117,12 @@
 </template>
 
 <script>
+import eventBus from '../common/eventBus'
 
 export default {
   data () {
     return {
-      selectedKey: ['home'],
+      selectedKey: ['about'],
       menuVisible: false
     }
   },
@@ -133,47 +134,47 @@ export default {
           name: '关于我们',
           type: 'contacts',
           path: 'about',
-          img: 'static/assets/images/bs.png',
-          selectedImg: 'static/assets/images/icon-case@2x.png'
+          // img: require('@/assets/images/bs.png'),
+          // selectedImg: '@/assets/images/icon-case@2x.png'
         },
         {
           key: 'home',
           name: '首页',
           type: 'home',
-          path: '/',
-          img: 'static/assets/images/icon-home.png',
-          selectedImg: 'static/assets/images/icon-home.png'
+          path: 'home',
+          // img: require('@/assets/images/icon-home.png'),
+          // selectedImg: require('@/assets/images/icon-home.png')
         },
         {
           key: 'business',
           name: '闻动业务',
           type: 'schedule',
           path: 'business1',
-          img: 'static/assets/images/icon-bs.png',
-          selectedImg: 'static/assets/images/icon-bs.png'
+          // img: require('@/assets/images/icon-bs.png'),
+          // selectedImg: require('@/assets/images/icon-bs.png')
         },
         {
           key: 'case',
           name: '经典案例',
           type: 'appstore',
           path: 'caseList',
-          img: 'static/assets/images/icon-case@2x.png',
-          selectedImg: 'static/assets/images/icon-case@2x.png',
+          // img: require('@/assets/images/icon-case@2x.png'),
+          // selectedImg: require('@/assets/images/icon-case@2x.png'),
         },
         {
           key: 'news',
           name: '新闻资讯',
           type: 'bars',
           path: 'newsList',
-          img: 'static/assets/images/logo/.png',
-          selectedImg: 'static/assets/images/icon-news@2x.png'
+          // img: require('@/assets/images/logo/.png'),
+          // selectedImg: require('@/assets/images/icon-news@2x.png')
         },
         
         // {
         //   key: 'emp',
         //   name: '招贤纳士',
         //   type: 'user',
-        //   img: 'static/assets/images/bs.png'
+        //   img: '@/assets/images/bs.png'
         // },
       ]
     }
@@ -188,6 +189,9 @@ export default {
     // document.documentElement.scrollTop = 0
     // document.body.scrollTop = 0
     window.addEventListener('scroll', this.scrollHandler)
+    eventBus.$on('selectedMenu', data => {
+      this.selectedKey = [data]
+    })
   },
   destroyed () {
     window.removeEventListener('scroll', this.scrollHander)
@@ -252,6 +256,10 @@ export default {
       } else {
         _this.scrollTop = total
       }
+    },
+    footerClick (path, key) {
+      this.$router.push(path)
+      this.selectedKey = [key]
     }
   }
 }
@@ -412,6 +420,8 @@ export default {
     z-index 1000
     width 100%
     background #fff
+    box-shadow: 4px 2px 8px rgba(187,184,184,0.2),
+                  -4px 2px 8px rgba(187,184,184,0.2)
   }
   .web-bar {
     display none
@@ -420,7 +430,7 @@ export default {
     display none
   }
   .main-container {
-    margin-top 50px
+    margin-top 60px
   }
 }
 

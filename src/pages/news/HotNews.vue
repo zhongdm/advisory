@@ -9,8 +9,10 @@
         <p>
           江苏益和总经理施立平先生主持了本次股权激励项目的启动会，会上他向参会代表介绍了项目启动会的主要内容和参会人员，其中包括：益和股东、中层管理人员、员工代表、合作伙伴及闻动顾问项目组成员等共40余人参与了本次股权激励项目的启动会。
         </p>
-        <img src="" alt="">
-        <span class="img-title">江苏益和总经理施立平先生主持项目启动会</span>
+        <div class="img-container">
+          <img src="@/assets/images/hotNew-1.jpeg" alt="">
+          <span class="img-title">江苏益和总经理施立平先生主持项目启动会</span>
+        </div>
         </div>
       </article>
       <article>
@@ -19,8 +21,10 @@
         <p>
           闻动顾问创始人、股权激励项目总顾问毛雷先生从股权的定义、股权激励的目的、方法和工具等方面做了详细的主题发言，介绍了这次江苏益和股权激励项目的具体项目执行计划、项目成果文件及项目顾问团队等相关情况。
         </p>
-        <img src="" alt="">
-        <span class="img-title">闻动顾问毛雷先生做主题发言</span>
+        <div class="img-container">
+          <img src="@/assets/images/hotNew-2.jpeg" alt="">
+          <span class="img-title">闻动顾问毛雷先生做主题发言</span>
+        </div>
         </div>
       </article>
       <article>
@@ -29,8 +33,10 @@
         <p>
           江苏益和董事长高鸿立先生对闻动顾问毛雷先生的主题发言给与了高度评价，他表示股权激励是江苏益和企业发展的一个重要的具有里程碑意义的环节，要求全体益和的干部和员工必须认真了解、参与、配合、支持闻动顾问为江苏益和开展的股权激励工作，希望通过股权激励项目的实施，实现益和的稳健和长远发展。
         </p>
-        <img src="" alt="">
-        <span class="img-title">江苏益和董事长高鸿立先生做总结发言</span>
+        <div class="img-container">
+          <img src="@/assets/images/hotNew-3.jpeg" alt="">
+          <span class="img-title">江苏益和董事长高鸿立先生做总结发言</span>
+        </div>
         </div>
       </article>
       <article>
@@ -46,7 +52,7 @@
 .hot-container
   h3
     text-align center
-    margin 1rem auto
+    margin 2rem auto
   article
     margin .5rem 0
     h4
@@ -56,4 +62,13 @@
     .img-title
       text-align center
       display block
+      color #7F7F7F
+      font-size .9rem
+
+img
+  margin .5rem auto
+  display block
+  width 500px
+.img-container
+  margin-bottom 1rem
 </style>

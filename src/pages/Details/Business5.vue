@@ -2,9 +2,9 @@
 <div>
   <div class="detail-wrapper wrapper">
     <picture>
-      <source class="mobile-img" srcset="static/assets/images/business5@2x.png" media="(max-width: 768px)">
-      <source class="mobile-img" srcset="static/assets/images/bs-web5.jpg" media="(min-width: 769px)">
-      <img class="mobile-img" srcset="static/assets/images/bs-web5.png" alt="pic">
+      <source class="mobile-img" srcset="@/assets/images/business5@2x.png" media="(max-width: 768px)">
+      <source class="mobile-img" srcset="@/assets/images/bs-web5.jpg" media="(min-width: 769px)">
+      <img class="mobile-img" srcset="@/assets/images/bs-web5.jpg" alt="pic">
     </picture>
     <h3 class="detail-title">高管圆桌汇</h3>
     <div>
