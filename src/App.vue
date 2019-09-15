@@ -69,7 +69,7 @@ p {
   width: 100%;
 } */
 .web-wrapper {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   width: 100%;
   padding: 0 1rem !important;

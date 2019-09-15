@@ -1,4 +1,5 @@
 <template>
+<div class="reset-padding">
   <div class="about-container">
     <section>
       <h3>公司简介</h3>
@@ -166,10 +167,28 @@
       </a-row>
     </section>
   </div>
+  <a-row type="flex">
+    <a-col :xs="24" :md="0">
+    <section class="contact-only">
+      <a-row type="flex" justify="center">
+        <a-col :span="16">
+          <h4>联系热线</h4>
+          <p>客服电话：025-68029573</p>
+          <p>专家直线：138-133-82808</p>
+        </a-col>
+        <a-col :span="8">
+          <div class="img-container">
+            <img src="@/assets/images/logo@2x.png" alt="">
+          </div>
+        </a-col>
+      </a-row>
+    </section>
+    </a-col>
+    </a-row>
+    </div>
 </template>
 
 <style lang="stylus" scoped>
-
 .service-container
   .service-list
     margin-top .5rem
@@ -219,7 +238,26 @@
     max-height 12rem
   p
     padding .8rem
-
+.contact-only
+  background #000
+  font-size .8rem
+  color #fff
+  padding 1rem 1rem
+  margin-left -1rem
+  margin-right -1rem
+  h4
+    color #fff
+    // margin-left .5rem
+  p
+    text-indent 0
+    // margin-left .5rem
+    margin-bottom 2px
+  .img-container
+    height 100%
+    display flex
+    justify-content center
+    align-items center
+ 
 .who-container
   img
     width 100%

@@ -43,7 +43,7 @@ export default {
     return {
       newsList: [{
         img: require('@/assets/images/bs-web7.jpg'),
-        title: '某大型现代化视频企业人才盘点项目',
+        title: '某大型现代化食品企业人才盘点项目',
         content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。',
         path: 'caseOne'
       },{

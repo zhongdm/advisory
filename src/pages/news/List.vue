@@ -4,7 +4,15 @@
       @click="showMenu(newsList[0])">
       <a-row type="flex">
         <a-col :span="24">
+          <div class="clip-img">
+          <!-- <picture>
+            <source class="web-clip-img" :srcset="newsList[0].img" media="(max-width: 768px)">
+            <source class="mobile-img" :srcset="newsList[0].img" media="(min-width: 769px)">
+            <img class="mobile-img" :srcset="newsList[0].img" alt="pic">
+          </picture>
+          </div> -->
           <img :src="newsList[0].img" alt="" class="icon-img">
+          </div>
           </a-col>
           <a-col :span="24">
           <div class="main-news-detail">
@@ -45,18 +53,18 @@ export default {
       newsList: [
         {
           title: '闻动顾问之江苏益和股权激励项目顺利启动！',
-          img: require('@/assets/images/bs-web7.jpg'),
+          img: require('@/assets/images/hotNew-1.jpeg'),
           content: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。',
           path: 'hotNews'
         },
         {
           title: '闻动增长研习社之南京天众增长主题研习活动圆满完成',
-          img: require('@/assets/images/business1@2x.png'),
+          img: require('@/assets/images/news1-3.jpeg'),
           path: 'news1'
         },
         {
           title: '7月[闻动]会员企业增长演习社活动纪实',
-          img: require('@/assets/images/business1@2x.png'),
+          img: require('@/assets/images/news2-1.jpeg'),
           path: 'news2'
         },
         {
@@ -136,4 +144,20 @@ p
   color #737373
 img
   width 100%
+
+
+@media screen and (min-width: 769px) {
+  .clip-img {
+    position relative
+    overflow hidden
+    max-height 15rem
+    height 15rem
+    img {
+      position absolute 
+      left 0
+      width 100%
+      top -10rem
+    }
+  }
+}
 </style>

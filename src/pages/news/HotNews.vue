@@ -68,7 +68,8 @@
 img
   margin .5rem auto
   display block
-  width 500px
+  max-width 500px
+  width 100%
 .img-container
   margin-bottom 1rem
 </style>

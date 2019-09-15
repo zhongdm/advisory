@@ -2,7 +2,7 @@
 <div>
   <div class="detail-wrapper wrapper">
     <img class="mobile-img" src="@/assets/images/business1@2x.png" alt="">
-    <h3 class="detail-title">某大型现代化视频企业人才盘点项目</h3>
+    <h3 class="detail-title">某大型现代化食品企业人才盘点项目</h3>
     <div>
       <h4>项目背景</h4>
       <p>J公司是一家集生产、 销售于一体的大型现代化食品企业，在欧亚非洲都拥有广泛的客户资源。</p>

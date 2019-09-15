@@ -106,6 +106,9 @@
             <li><a href="javascript:void(0);" @click="footerClick('about', 'about')">关于我们</a></li>
           </ul>
         </div>
+        <div class="footer-item">
+          <img src="@/assets/images/qrcode.png" alt="">
+        </div>
       </section>
       <div class="copy-right">
         Copyright Wendong | All Rights Reserved | 苏ICP备19040864号
@@ -266,11 +269,13 @@ export default {
 </script>
 
 <style>
+
 .el-header {
   padding: 0
 }
 .ant-menu-horizontal {
   border-bottom: none;
+  margin: auto;
 }
 .ant-menu-horizontal > .ant-menu-item > a {
   color: #fff;
@@ -281,7 +286,7 @@ export default {
 }
 .ant-menu-horizontal > .ant-menu-item-selected {
   background: rgb(1, 62, 107);
-  color: #fff;
+  color: #fff !important;
 }
 .ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu {
   top: 0;
@@ -388,6 +393,9 @@ export default {
         font-size .7rem 
         a
           color #ddd
+      img
+        display block
+        max-width 70%
   .copy-right
     border-top 1px solid #eee
     padding 10px

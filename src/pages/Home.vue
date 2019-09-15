@@ -43,7 +43,7 @@
       <h3>
         <img src="@/assets/images/icon-bs.png" alt="" class="icon-img">闻动业务</h3>
       <div>
-        <a-row type="flex" justify="space-between" :gutter="16">
+        <a-row type="flex" justify="left" :gutter="16">
           <a-col :xs="12" :lg="6" v-for="(item, index) in businessList" :key="index">
             <div class="list-item" @click="clickBusiness(item, index + 1)">
               <img :src="item.img" alt="">
@@ -117,7 +117,6 @@
     <div class="news-container container" id="news">
       <h3><img src="@/assets/images/icon-news@2x.png" alt="" class="icon-img">新闻资讯
       <a href="javascript:void(0)" @click="$router.push('newsList')" class="more-link" style="float:right;">更多>></a></h3>
-      
       <a-row type="flex" :gutter="16">
           <a-col :xs="24" :md="12">
             <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
@@ -263,7 +262,7 @@ export default {
         {
           path: 'caseone',
           img: require('@/assets/images/business1@2x.png'),
-          title: '某大型现代化视频企业人才盘点项目',
+          title: '某大型现代化食品企业人才盘点项目',
           content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
         },
         {
@@ -595,6 +594,9 @@ a:hover
     display inline
     width 100%
   }
+  // .case-info .case-item img {
+  //   width 100%
+  // }
 }
 @media screen and (min-width: 769px) {
   .home-sub-menu {
