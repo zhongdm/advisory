@@ -9,6 +9,29 @@
     <h3 class="detail-title">闻动私董会</h3>
     <div>
       <!-- <h4>管理困局</h4> -->
+      <a-row type="flex" justify="space-around">
+        <a-col :span="24">
+          <div class="summary-container">
+            <p><em>宗旨：</em>修心 悟道 优术</p>
+            <p><em>修心：</em>修“利他”之心</p>
+            <p><em>悟道：</em>悟“商道”的本质</p>
+            <p><em>优术：</em>优化解决问题的“方法”和“工具”</p>
+          </div>
+        </a-col>
+        <!-- <a-col :span="12">
+            <div>
+              <a-row type="flex" justify="center">
+            <a-col :span="24">
+          
+          <img src='@/assets/images/logo@2x.png' alt="">
+          </a-col>
+          <a-col :span="24">
+          <span>闻动私董会</span>
+          </a-col>
+          </a-row>
+          </div>
+        </a-col> -->
+      </a-row>
       <ul class="qs-list">
         <li>一个高端的商务圈层</li>
         <li>一个坦诚的智囊团队</li>
@@ -73,5 +96,16 @@ export default {
   }
   .qs-list, .content-info, .contact-info {
     font-size: .9rem;
+  }
+  .summary-container {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+  }
+  .summary-container em {
+    font-weight: bold;
+    font-style: normal;
+  }
+  .summary-container p {
+    text-indent: 0;
   }
 </style>
