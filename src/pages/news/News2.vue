@@ -9,7 +9,7 @@
       <p>
         7月19号下午，闻动顾问在南京金陵国际家居四楼城市之窗·融阁举办了2019年下半年的首场<em class="red-strong">会员企业增长研习社活动</em>。参与企业有<em class="red-strong">南京以国酒业、南京部落装饰、南京饰家美软装</em>等10余家公司的高层领导。
       </p>
-      <img class="block-img" src="@/assets/images/news2-icon.png" alt="">
+      <!-- <img class="block-img" src="@/assets/images/news2-icon.png" alt=""> -->
       <div>
         <p>
           活动开始，闻动顾问的毛雷先生简单介绍了公司的使命、愿景和价值观，顾问团队的服务逻辑和实践方法
