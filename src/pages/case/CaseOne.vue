@@ -1,7 +1,12 @@
 <template>
 <div>
   <div class="detail-wrapper wrapper">
-    <img class="mobile-img" src="@/assets/images/business1@2x.png" alt="">
+    <picture>
+      <source class="mobile-img" srcset="@/assets/images/case1-m.jpg" media="(max-width: 576px)">
+      <source class="mobile-img" srcset="@/assets/images/case1-web.jpg" media="(min-width: 577px)">
+      <img class="mobile-img" srcset="@/assets/images/case1-web.jpg" alt="pic">
+    </picture>
+    <!-- <img class="mobile-img" src="@/assets/images/business1@2x.png" alt=""> -->
     <h3 class="detail-title">某大型现代化食品企业人才盘点项目</h3>
     <div>
       <h4>项目背景</h4>
@@ -15,11 +20,12 @@
       <p>然后利用多种方式手段对营销部门和制造中心管理层和基层人员分别进行了系统的评估，深入了解两部门人员能力及特点； 最后筛选出两个部门的高潜质管理人才，并提出了 有针对性的培养发展建议，并对两个部门的低潜管理人员进行了识别。</p>
     </div>
     <!-- <img src="@/assets/images/caseOne.png" alt="" style="width:100%;margin: 1rem 0;"> -->
-    <a-row type="flex" class="spirit-img" justify="space-between">
-      <a-col :xs="24" :md="6"><span class="first-img"></span></a-col>
-      <a-col :xs="24" :md="6"><span class="second-img"></span></a-col>
-      <a-col :xs="24" :md="6"><span class="third-img"></span></a-col>
-      <a-col :xs="24" :md="6"><span class="forth-img"></span></a-col>
+    <a-row type="flex" class="spirit-img" justify="left">
+      <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="first-img"></span></div></a-col>
+      <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="second-img"></span></div></a-col>
+      <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="third-img"></span></div></a-col>
+      <a-col :xs="24" :sm="12" :md="5"><div><span class="forth-img"></span></div></a-col>
+      <a-col :xs="24" :sm="12" :md="4"><div><span class="fifth-img"></span></div></a-col>
     </a-row>
     </div>
     <!-- <bottom-menu></bottom-menu> -->
@@ -88,12 +94,16 @@ export default {
     height 190px
     margin auto
     &.first-img
-      background-position 0 -170px
+      background-position 0 0
+      height 170px
     &.second-img
-      background-position 0 -365px
+      background-position 0 -170px
     &.third-img
+      background-position 0 -365px
+      // height 170px
+    &.forth-img
       background-position 0 -560px
       height 170px
-    &.forth-img
+    &.fifth-img
       background-position 0 -725px
 </style>

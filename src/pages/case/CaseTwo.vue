@@ -1,7 +1,12 @@
 <template>
 <div>
   <div class="detail-wrapper wrapper">
-    <img class="mobile-img" src="@/assets/images/business1@2x.png" alt="">
+    <picture>
+      <source class="mobile-img" srcset="@/assets/images/case2-m.jpg" media="(max-width: 576px)">
+      <source class="mobile-img" srcset="@/assets/images/case2-web.jpg" media="(min-width: 577px)">
+      <img class="mobile-img" srcset="@/assets/images/case2-web.jpg" alt="pic">
+    </picture>
+    <!-- <img class="mobile-img" src="@/assets/images/business1@2x.png" alt=""> -->
     <h3 class="detail-title">某宠物用品公司股权激励项目</h3>
     <div>
       <h4>项目背景</h4>
