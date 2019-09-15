@@ -24,7 +24,7 @@
       </article>
       <div class="theme-container">
         <div class="line-icon">
-          <img src="@/assets/images/news6/icon-wd.png" alt="">
+          <img src="@/assets/images/logo@2x.png" alt="">
         </div>
         <span class="main-title">闻动私董会，走进苏企联</span>
         <div class="detail-addr">
@@ -66,7 +66,7 @@
         <label for="">案主确认</label>
         <p>
           得益于前期参会部分企业的走访和调研，活动策划团队根据走访企业家的意愿和需求，确定了南京福瑞泽信息科技有限公司的总经理张总为本期案主，福瑞泽是一家为企业提供专业一站式科技咨询服务的公司 ，科技咨询包含政策咨询（知识产权、企业资质、iso9000,18000等），信息化咨询（中国制造2025管理体系等）两方面内容，虽然福瑞泽在技术上有很强的优势，但在经营管理和销售团队的建设方面存在瓶颈，这次私董会讨论的主题也由此展开。</p>
-        <img src="@/assets/images/news5/5.jpeg" alt="">
+        <img src="@/assets/images/news5/5.jpg" alt="">
         <p>
           张总笑言本次会议是“坦诚相见”，将自己在营销团队管理和产品销售方面的困惑，一一向在座的企业家们道出，并将现阶段企业发展的阶段、未来的发展趋势和目前销售团队的配置分享给与会企业家，以方便大家研讨和给出建议。 </p>
       </article>
@@ -81,7 +81,7 @@
         </p>
       </article>
       <div class="line-icon">
-        <img src="@/assets/images/news6/icon-wd.png" alt="">
+        <img src="@/assets/images/logo@2x.png" alt="">
       </div>
       <h4 style="text-align:center;margin-top:1rem;">精彩观点分享</h4>
       <img src="@/assets/images/news5/7.jpeg" alt="">

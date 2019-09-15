@@ -171,16 +171,16 @@
     <a-col :xs="24" :md="0">
     <section class="contact-only">
       <a-row type="flex" justify="center">
-        <a-col :span="16">
+        <a-col :span="24">
           <h4>联系热线</h4>
           <p>客服电话：025-68029573</p>
           <p>专家直线：138-133-82808</p>
         </a-col>
-        <a-col :span="8">
+        <!-- <a-col :span="8">
           <div class="img-container">
             <img src="@/assets/images/logo@2x.png" alt="">
           </div>
-        </a-col>
+        </a-col> -->
       </a-row>
     </section>
     </a-col>

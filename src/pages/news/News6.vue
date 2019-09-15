@@ -23,7 +23,7 @@
       </article>
       <div class="theme-container">
         <div class="line-icon">
-          <img src="@/assets/images/news6/icon-wd.png" alt="">
+          <img src="@/assets/images/logo@2x.png" alt="">
         </div>
         <span class="main-title">第七期闻动私董会</span>
         <div class="detail-addr">
@@ -80,7 +80,7 @@
           杨总非常坦诚地回答了各位企业家的问题，在“袒露”自己“疑问”的同时，也用一颗真诚之心换取了有价值的回馈。在随后的环节里，各位企业家根据杨总的分享，也给出了很有建设性的建议。</p>
       </article>
       <div class="line-icon">
-        <img src="@/assets/images/news6/icon-wd.png" alt="">
+        <img src="@/assets/images/logo@2x.png" alt="">
       </div>
       <h4 style="text-align:center;margin-top:1rem;">精彩观点分享</h4>
       <img src="@/assets/images/news6/5.jpeg" alt="">

@@ -275,7 +275,8 @@ export default {
 }
 .ant-menu-horizontal {
   border-bottom: none;
-  margin: auto;
+  margin: auto !important;
+  border-bottom: none;
 }
 .ant-menu-horizontal > .ant-menu-item > a {
   color: #fff;

@@ -261,13 +261,15 @@ export default {
       caseList: [
         {
           path: 'caseone',
-          img: require('@/assets/images/business1@2x.png'),
+          img: require('@/assets/images/case1-m.jpg'),
+          webImg: require('@/assets/images/case1-web.jpg'),
           title: '某大型现代化食品企业人才盘点项目',
           content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
         },
         {
           path: 'casetwo',
-          img: require('@/assets/images/business1@2x.png'),
+          img: require('@/assets/images/case2-m.jpg'),
+          webImg: require('@/assets/images/case2-web.jpg'),
           title: '某宠物用品公司股权激励项目',
           content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。'
         }
@@ -483,12 +485,12 @@ export default {
         p
           text-indent 0
           font-weight bold
-          margin 1rem 0 6px 0
+          margin 2px 0 6px 0
           text-overflow ellipsis
           overflow hidden
           white-space nowrap
         span
-          font-size .8rem
+          font-size .9rem
           text-align left
           color #8f8f8f
           display -webkit-inline-box
@@ -582,7 +584,7 @@ a:hover
   cursor pointer
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .home-sub-menu {
     display block
   }
@@ -594,11 +596,11 @@ a:hover
     display inline
     width 100%
   }
-  // .case-info .case-item img {
-  //   width 100%
-  // }
+  .case-info .case-item img {
+    width 16rem
+  }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 577px) {
   .home-sub-menu {
     display: none;
   }
@@ -611,7 +613,7 @@ a:hover
     width: 40%;
     display: inline-block;
     vertical-align: top;
-    height: 6rem;
+    // height: 6rem;
   }
   .case-item .case-content {
     width: 55%;
