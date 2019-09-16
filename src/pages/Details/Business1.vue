@@ -7,7 +7,7 @@
       <img class="mobile-img" srcset="@/assets/images/business1@2x.png" alt="pic">
     </picture>
     <!-- <img class="mobile-img" src="@/assets/images/business1@2x.png" alt=""> -->
-    <h3 class="detail-title">盈利增长顾问</h3>
+    <h3 class="detail-title">企业增长项目</h3>
     <div>
       <h4>管理困局</h4>
       <ul class="qs-list">

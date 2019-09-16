@@ -4,7 +4,7 @@
     <section>
       <h3>公司简介</h3>
       <article class="text-indent">
-        闻动顾问管理公司由有咨询行业从业二十年的资深顾问毛雷先生创立，顾问团队由公司CEO等企业经营管理实战经验背景和市场营销管理、人力资源管理、精益生产管理等实战专业背景的资深顾问构成。
+        闻动顾问管理公司由有咨询行业从业二十年的资深顾问毛雷先生创立，顾问团队由公司CEO等企业经营管理实战经验背景和市场营销管理、人力资源管理、精益生产管理等专业背景的资深顾问构成。
       </article>
       <article class="text-indent">
         致力于帮助客户解决盈利和增长问题，追求和客户建立结果导向的长期顾问合作伙伴关系。
@@ -100,7 +100,7 @@
     <section class="who-container">
       <h3>我们是谁</h3>
       <article class="text-indent">
-        闻动管理顾问公司是一家管理咨询顾问公司，目前有上海和南京两家子公司，专注于帮助企业解决在实现盈利和增长过程中遇到的问题，涉及发展战略、组织结构涉及、组织能力、运营体系、人力资源管理体系等多方面专业领域。
+        闻动管理顾问公司是一家管理咨询顾问公司，目前有上海和南京两家子公司，专注于帮助企业解决在实现盈利和增长过程中遇到的问题，涉及发展战略、组织结构、组织能力、运营体系、人力资源管理体系等多方面专业领域。
       </article>
       <a-row type="flex" justify="space-between" :gutter="16">
         <a-col :xs="24" :sm="24" :md="8" :span="8">
@@ -116,7 +116,7 @@
     </section>
     <section>
       <h3>我们为谁服务</h3>
-      <article>
+      <article class="text-indent">
         我们的客户既包括了国有企业也包括私营企业，主要分布于江浙沪一带。
       </article>
       <a-row type="flex" justify="space-between" :gutter="16">
@@ -134,7 +134,7 @@
         <a-col :xs="24" :sm="24" :md="12"  :span="12">
           <div class="objection-first object-item">
             <span>
-              <em>60%</em>国有企业
+              <em>60%</em>私有企业
             </span>
             <img src="@/assets/images/service_self.jpg" alt="">
             <p class="text-indent">

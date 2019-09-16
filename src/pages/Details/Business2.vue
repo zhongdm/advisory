@@ -16,14 +16,14 @@
         <li>企业目标如何定？定的合理么？怎样实现？</li>
         <li>企业向何处发展？是做大还是做强？</li>
       </ul>
-      <p>以上常见的战略问题，是您的通电么？闻动都可以帮你解决。</p>
+      <p>以上常见的战略问题，是您的通病么？闻动都可以帮你解决。</p>
     </div>
     <div class="content-container">
       <h4>顾问内容</h4>
       <section class="content-item">
         <a-tag class="content-tag" color="#108ee9">描述战略</a-tag>
         <div class="content-info">
-          <p>帮助客户把战略说清楚，界定企业价值创造路线图，即公司发展路径</p>
+          <div>帮助客户把战略说清楚，界定企业价值创造路线图，即公司发展路径</div>
         </div>
       </section>
       <section class="content-item">

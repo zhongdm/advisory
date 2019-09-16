@@ -181,7 +181,7 @@ export default {
       businessList: [
         {
           img: require('@/assets/images/business1@2x.png'),
-          title: '盈利增长顾问'
+          title: '企业增长项目'
         },
         {
           img: require('@/assets/images/business2@2x.png'),
@@ -197,7 +197,7 @@ export default {
         },
         {
           img: require('@/assets/images/business5@2x.png'),
-          title: '高管圆桌会'
+          title: '高管圆桌汇'
         },
         {
           img: require('@/assets/images/business6@2x.png'),

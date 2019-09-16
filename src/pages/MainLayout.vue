@@ -76,11 +76,11 @@
         <div class="footer-item">
           <h4>闻动业务</h4>
           <ul>
-            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">盈利增长顾问</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">企业增长项目</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business2', 'business')">发展战略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business3', 'business')">组织能力顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business4', 'business')">企业文化顾问</a></li>
-            <li><a href="javascript:void(0);" @click="footerClick('business5', 'business')">高管圆桌会</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business5', 'business')">高管圆桌汇</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business6', 'business')">闻动私董会</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business7', 'business')">闻动企业会员</a></li>
             <!-- <li><a href="javascript:void(0);">智慧城市与科技信息化</a></li> -->
