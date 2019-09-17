@@ -29,7 +29,7 @@
           <!-- <span>WENDONG ENTERPRISE MANAGEMENT CONSULTANTS LTD.</span> -->
         </div>
       </div>
-      
+
       <div class="menu-sider">
         <a-menu
         mode="horizontal"
@@ -68,7 +68,7 @@
       <section class="contact-tel">
         <h4>联系电话</h4>
         <div>
-          <span>客服电话: 025-68029573</span>
+          <span>客服电话: 025-69904569</span>
           <span>专家直线: 138-133-82808</span>
         </div>
       </section>
@@ -172,7 +172,7 @@ export default {
           // img: require('@/assets/images/logo/.png'),
           // selectedImg: require('@/assets/images/icon-news@2x.png')
         },
-        
+
         // {
         //   key: 'emp',
         //   name: '招贤纳士',
@@ -335,7 +335,7 @@ export default {
     height 100%
     padding .5rem
   .menu-list
-    position absolute 
+    position absolute
     right 1rem
     width 1.4rem
     line-height 100%
@@ -391,7 +391,7 @@ export default {
         margin-bottom .8rem
       ul
         list-style none
-        font-size .7rem 
+        font-size .7rem
         a
           color #ddd
       img
