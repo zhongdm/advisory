@@ -72,7 +72,7 @@
             <a-col :span="12"><a @click="$router.push('caseList')">案例展示</a></a-col>
           </a-row>
           <a-row>
-            <a-col :span="12"><a @click="$router.push('')">咨询中心</a></a-col>
+            <a-col :span="12"><a @click="$router.push('newsList')">新闻资讯</a></a-col>
             <a-col :span="12"><a @click="$router.push('about')">关于我们</a></a-col>
           </a-row>
         </a-col>
@@ -93,6 +93,9 @@
         </div>
         </a-col>
       </a-row>
+      </div>
+      <div class="copy-right">
+        Copyright Wendong | All Rights Reserved | 苏ICP备19040864号
       </div>
     </div>
 
