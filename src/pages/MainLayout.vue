@@ -65,17 +65,50 @@
     </div>
     <div class="footer">
       <div class="web-wrapper footer-wrapper">
+      <a-row type="flex" justify="space-around">
+        <a-col :span="6">
+          <a-row>
+            <a-col :span="12"><a @click="$router.push('business1')">闻动业务</a></a-col>
+            <a-col :span="12"><a @click="$router.push('caseList')">案例展示</a></a-col>
+          </a-row>
+          <a-row>
+            <a-col :span="12"><a @click="$router.push('')">咨询中心</a></a-col>
+            <a-col :span="12"><a @click="$router.push('about')">关于我们</a></a-col>
+          </a-row>
+        </a-col>
+        <a-col :span="14">
+          <section class="contact-tel">
+            <div>
+            <h4>联系电话</h4>
+            <div>
+              <span>客服电话: <a href="tel:025-68029573">025-68029573</a></span>
+              <span>专家直线: <a href="tel:138-133-82808">138-133-82808</a></span>
+            </div>
+            </div>
+          </section>
+        </a-col>
+        <a-col :span="4">
+          <div class="last-code">
+          <img src="@/assets/images/qrcode.png" alt="">
+        </div>
+        </a-col>
+      </a-row>
+      </div>
+    </div>
+
+    <div class="footer" style="display:none">
+      <div class="web-wrapper footer-wrapper">
       <section class="contact-tel">
         <h4>联系电话</h4>
         <div>
-          <span>客服电话: 025-68029573</span>
-          <span>专家直线: 138-133-82808</span>
+          <span>客服电话:  <a href="tel:025-68029573">025-68029573</a></span>
+          <span>专家直线: <a href="tel:138-133-82808">138-133-82808</a></span>
         </div>
       </section>
       <section class="other-footer">
         <div class="footer-item">
           <h4>闻动业务</h4>
-          <ul>
+          <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">企业增长项目</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business2', 'business')">发展战略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business3', 'business')">组织能力顾问</a></li>
@@ -83,28 +116,25 @@
             <li><a href="javascript:void(0);" @click="footerClick('business5', 'business')">高管圆桌汇</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business6', 'business')">闻动私董会</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business7', 'business')">闻动企业会员</a></li>
-            <!-- <li><a href="javascript:void(0);">智慧城市与科技信息化</a></li> -->
-          </ul>
+          </ul> -->
         </div>
         <div class="footer-item">
           <h4>案例展示</h4>
-          <ul>
-            <!-- <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">合作客户</a></li> -->
+          <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('caseList', 'case')">经典案例</a></li>
-          </ul>
+          </ul> -->
         </div>
         <div class="footer-item">
           <h4>资讯中心</h4>
-          <ul>
+          <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('newsList', 'news')">新闻资讯</a></li>
-            <!-- <li><a href="javascript:void(0);">闻动智库</a></li> -->
-          </ul>
+          </ul> -->
         </div>
         <div class="footer-item">
           <h4>关于我们</h4>
-          <ul>
+          <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('about', 'about')">关于我们</a></li>
-          </ul>
+          </ul> -->
         </div>
         <div class="footer-item">
           <img src="@/assets/images/qrcode.png" alt="">
@@ -374,8 +404,10 @@ export default {
   color #fff
   font-size .9rem
   .contact-tel
-    border-bottom 1px solid #eee
+    // border-bottom 1px solid #eee
     padding-bottom 1rem
+    display flex
+    justify-content center
     h4
       color #fff
     span
@@ -402,6 +434,20 @@ export default {
     padding 10px
     text-align center
 
+.footer-wrapper
+  // padding 1rem !important
+  height 7rem
+  a
+    color #fff
+    &:hover
+      text-decoration underline
+  .last-code
+    position relative
+    img
+      max-width 60%
+      display block
+      position absolute
+      right 0
 
 @media screen and (min-width:1201px){
   .mobile-bar {

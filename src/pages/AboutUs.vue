@@ -17,7 +17,7 @@
       </article>
       <ul class="service-list">
         <li>
-          <section>
+          <section @click="$router.push('business1')">
           <a-row type="flex">
             <a-col :xs="8" :sm="8" :md="24">
               <img src="@/assets/images/service_icon1.png" class="circle-img" alt="">
@@ -33,7 +33,7 @@
           </section>
         </li>
         <li>
-          <section>
+          <section @click="$router.push('business5')">
             <a-row type="flex">
               <a-col :xs="8" :sm="8"  :md="24">
             <img src="@/assets/images/service_icon2.png" class="circle-img" alt="">
@@ -49,7 +49,7 @@
           </section>
         </li>
         <li>
-          <section>
+          <section @click="$router.push('business2')">
             <a-row type="flex">
               <a-col :xs="8" :sm="8" :md="24">
           <img src="@/assets/images/service_icon3.png" class="circle-img" alt="">
@@ -64,7 +64,7 @@
           </section>
         </li>
         <li>
-          <section>
+          <section @click="$router.push('business4')">
             <a-row type="flex">
               <a-col :xs="8" :sm="8"  :md="24">
           <img src="@/assets/images/service_icon4.png" class="circle-img" alt="">
@@ -80,7 +80,7 @@
           </section>
         </li>
         <li>
-          <section>
+          <section @click="$router.push('business3')">
             <a-row type="flex">
               <a-col :xs="8" :sm="8"  :md="24">
           <img src="@/assets/images/service_icon5.png" class="circle-img" alt="">
@@ -151,15 +151,15 @@
           <img src="@/assets/images/culture.jpg" alt="" class="culture-img">
         </a-col>
         <a-col :xs="24" :sm="24" :md="8" :span="8">
-          <div class="content-list">
+          <div class="content-list mission-list">
             <h4>我们的使命</h4>
             <p>帮助客户实现盈利和增长</p>
           </div>
-          <div>
+          <div class="mission-list">
             <h4>我们的愿景</h4>
             <p>成为客户不可缺少的长期合作伙伴</p>
           </div>
-          <div>
+          <div class="mission-list">
             <h4>我们的价值观</h4>
             <p>客户价值、员工成长、结果导向</p>
           </div>
@@ -205,6 +205,8 @@
         width 70%
         text-align center
         margin 5px auto
+        &:hover
+          cursor pointer
         .circle-img
           border-radius 50%
           width 3rem
@@ -273,6 +275,16 @@
   width 100%
   display block
 
+// .service-container
+//   .service-list
+//     li
+.service-item
+  display inline-block
+  text-align left
+  p
+    text-indent 0
+.mission-list
+  margin-bottom 1rem
 @media screen and (max-width: 768px) {
   .service-container .service-list li {
     display block
