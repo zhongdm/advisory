@@ -173,8 +173,8 @@
       <a-row type="flex" justify="center">
         <a-col :span="24">
           <h4>联系热线</h4>
-          <p>客服电话：025-69904569</p>
-          <p>专家直线：138-133-82808</p>
+          <p>客服电话: <a href="tel:025-68029573">025-68029573</a></p>
+          <p>专家直线: <a href="tel:138-133-82808">138-133-82808</a></p>
         </a-col>
         <!-- <a-col :span="8">
           <div class="img-container">
@@ -254,6 +254,8 @@
     text-indent 0
     // margin-left .5rem
     margin-bottom 2px
+    a
+      color #fff
   .img-container
     height 100%
     display flex

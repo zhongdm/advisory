@@ -39,12 +39,9 @@
         style="margin-bottom: 10px;"
         :defaultSelectedKeys="selectedKey"
       >
-        <a-menu-item :key="item.key" v-for="item in menuList" @click="menuItem(item)">
-          <!-- <a :href="'/#' +item.key"> -->
+        <a-menu-item :key="item.key" :style="{width: 100/menuList.length + '%'}" v-for="item in menuList" @click="menuItem(item)">
           <a-icon :type="item.type" />
-          <!-- <img :src="item.img" alt=""> -->
           <span>{{item.name}}</span>
-          <!-- </a> -->
         </a-menu-item>
       </a-menu>
       <!-- <a-anchor class="menu-container web-wrapper" @click="menuItem">
@@ -104,7 +101,7 @@
       <section class="contact-tel">
         <h4>联系电话</h4>
         <div>
-          <span>客服电话:  <a href="tel:025-68029573">025-68029573</a></span>
+          <span>客服电话: <a href="tel:025-68029573">025-68029573</a></span>
           <span>专家直线: <a href="tel:138-133-82808">138-133-82808</a></span>
         </div>
       </section>
