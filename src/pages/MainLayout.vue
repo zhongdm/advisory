@@ -312,7 +312,7 @@ export default {
   color: #fff;
 }
 .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-item-active {
-  background: rgb(1, 62, 107);
+  background-color: rgb(1, 62, 107) !important;
   color: #fff;
 }
 .ant-menu-horizontal > .ant-menu-item-selected {
