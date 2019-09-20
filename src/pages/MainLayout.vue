@@ -39,22 +39,24 @@
         style="margin-bottom: 10px;"
         :defaultSelectedKeys="selectedKey"
       >
-        <a-menu-item :key="item.key" :style="{width: 100/menuList.length + '%'}" v-for="item in menuList" @click="menuItem(item)">
-          <a-icon :type="item.type" />
-          <span>{{item.name}}</span>
-        </a-menu-item>
-      </a-menu>
-      <!-- <a-anchor class="menu-container web-wrapper" @click="menuItem">
-        <a-anchor-link
-          v-for="item in menuList"
-          :key="item.key"
-          :href="'/#' + item.key">
-          <template slot="title">
+        <template v-for="item in menuList">
+          <a-sub-menu
+            :key="item.key"
+            :style="{width: 100/menuList.length + '%'}"
+            v-if="item.children && item.children.length > 0"
+            @titleClick="menuItem(item)">
+            <span slot="title"><a-icon :type="item.type" /><span>{{item.name}}</span></span>
+            <a-menu-item v-for="(subItem) in item.children" :key="subItem.key">
+              <!-- <a-icon :type="subItem.type" /> -->
+              <span>{{subItem.name}}</span>
+            </a-menu-item>
+          </a-sub-menu>
+          <a-menu-item v-else :key="item.key" :style="{width: 100/menuList.length + '%'}">
             <a-icon :type="item.type" />
             <span>{{item.name}}</span>
-          </template>
-          </a-anchor-link>
-      </a-anchor> -->
+          </a-menu-item>
+        </template>
+      </a-menu>
       </div>
     </div>
     <div class="web-wrapper main-container">
@@ -179,15 +181,60 @@ export default {
           // selectedImg: require('@/assets/images/icon-home.png')
         },
         {
-          key: 'business',
+          key: 'business1',
           name: '闻动业务',
           type: 'schedule',
           path: 'business1',
+          children: [
+            {
+              type: '',
+              key: 'business1',
+              name: '企业增长项目',
+              path: 'business1'
+            },
+            {
+              type: '',
+              key: 'business2',
+              name: '发展战略顾问',
+              path: 'business2'
+            },
+            {
+              type: '',
+              key: 'business3',
+              name: '企业文化顾问',
+              path: 'business3'
+            },
+            {
+              type: '',
+              key: 'business4',
+              name: '组织能力顾问',
+              path: 'business4'
+            },
+            {
+              type: '',
+              key: 'business5',
+              name: '高管圆桌汇',
+              path: 'business5'
+            },
+            {
+              type: '',
+              key: 'business6',
+              name: '闻动私董会',
+              path: 'business6'
+            },
+            {
+              type: '',
+              key: 'business7',
+              name: '闻动企业会员',
+              path: 'business7'
+            },
+            
+          ]
           // img: require('@/assets/images/icon-bs.png'),
           // selectedImg: require('@/assets/images/icon-bs.png')
         },
         {
-          key: 'case',
+          key: 'caseList',
           name: '经典案例',
           type: 'appstore',
           path: 'caseList',
@@ -195,7 +242,7 @@ export default {
           // selectedImg: require('@/assets/images/icon-case@2x.png'),
         },
         {
-          key: 'news',
+          key: 'newsList',
           name: '新闻资讯',
           type: 'bars',
           path: 'newsList',
@@ -250,13 +297,17 @@ export default {
       }
       }
     },
-    handleClick () {
+    handleClick (item, key, path) {
+      console.log(item, key,path)
+      this.$router.push(item.key)
+      this.selectedKey = [item.key]
       this.menuVisible = false
     },
     showMenu () {
       this.menuVisible = !this.menuVisible
     },
     menuItem (item) {
+      console.log('item')
       // if (link.href.indexOf('about') !== -1) {
       //   this.$router.push(link.href.replace(/\/#/g, ''))
       // } else {
@@ -278,8 +329,8 @@ export default {
       // document.documentElement.scrollTop = total
       // // Safari
       // window.pageYOffset = total
-      this.$router.push(item.path)
-      this.selectedKey = [item.key]
+      // this.$router.push(item.path)
+      // this.selectedKey = [item.key]
     },
     smoothDown () {
       if (distance < total) {
@@ -311,15 +362,43 @@ export default {
 .ant-menu-horizontal > .ant-menu-item > a {
   color: #fff;
 }
-.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-item-active {
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-item-open,
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected,
+/* .ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-item-active，
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected, */
+.ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-open {
   background-color: rgb(1, 62, 107) !important;
-  color: #fff;
+  color: #fff !important;
+  border-bottom: none;
 }
 .ant-menu-horizontal > .ant-menu-item-selected {
   background: rgb(1, 62, 107);
   color: #fff !important;
+  border-bottom: none;
 }
-.ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu {
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+{
+  color: rgb(0, 120,214);
+}
+.ant-menu-submenu-title:hover {
+  color: #fff;
+}
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu {
   top: 0;
   border-bottom: none;
 }
