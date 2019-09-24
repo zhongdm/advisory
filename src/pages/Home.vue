@@ -44,7 +44,7 @@
         <img src="@/assets/images/icon-bs.png" alt="" class="icon-img">闻动业务</h3>
       <div>
         <a-row type="flex" justify="start" :gutter="16">
-          <a-col :xs="12" :lg="6" v-for="(item, index) in businessList" :key="index">
+          <a-col :xs="12" :lg="8" v-for="(item, index) in businessList" :key="index">
             <div class="list-item" @click="clickBusiness(item, index + 1)">
               <img :src="item.img" alt="">
               <span>{{item.title}}</span>

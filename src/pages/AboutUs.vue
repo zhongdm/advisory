@@ -287,6 +287,9 @@
     text-indent 0
 .mission-list
   margin-bottom 1rem
+  height 33%
+  h4
+    font-weight bold
 @media screen and (max-width: 768px) {
   .service-container .service-list li {
     display block
@@ -305,9 +308,9 @@
       text-indent 0
     }
   }
-}
-
-@media screen and (max-width: 768px) {
+  .mission-list {
+    height auto
+  }
   .content-list {
     margin-top 1rem
   }

@@ -64,8 +64,8 @@
     </div>
     <div class="footer">
       <div class="web-wrapper footer-wrapper">
-      <a-row type="flex" justify="space-around">
-        <a-col :span="6">
+      <a-row type="flex" justify="space-around" align="middle" style="height:100%;">
+        <a-col :span="5">
           <a-row>
             <a-col :span="12"><a @click="$router.push('business1')">闻动业务</a></a-col>
             <a-col :span="12"><a @click="$router.push('caseList')">案例展示</a></a-col>
@@ -75,7 +75,7 @@
             <a-col :span="12"><a @click="$router.push('about')">关于我们</a></a-col>
           </a-row>
         </a-col>
-        <a-col :span="14">
+        <a-col :span="13">
           <section class="contact-tel">
             <div>
             <h4>联系电话</h4>
@@ -86,10 +86,17 @@
             </div>
           </section>
         </a-col>
-        <a-col :span="4">
-          <div class="last-code">
-          <img src="@/assets/images/qrcode.png" alt="">
-        </div>
+        <a-col :span="6">
+          <!-- <div class="last-code"> -->
+            <a-row type="flex" justify="space-around">
+              <a-col :span="12">
+          <img src="@/assets/images/qrcode.png" alt="" class="footer-img-qr">
+          </a-col>
+          <a-col :span="12">
+          <img src="@/assets/images/weibo.jpg" alt="" class="footer-img-wb">
+          </a-col>
+          </a-row>
+        <!-- </div> -->
         </a-col>
       </a-row>
       </div>
@@ -485,7 +492,7 @@ export default {
   font-size .9rem
   .contact-tel
     // border-bottom 1px solid #eee
-    padding-bottom 1rem
+    // padding-bottom 1rem
     display flex
     justify-content center
     h4
@@ -521,13 +528,9 @@ export default {
     color #fff
     &:hover
       text-decoration underline
-  .last-code
-    position relative
-    img
-      max-width 60%
-      display block
-      position absolute
-      right 0
+  .footer-img-wb, .footer-img-qr
+    max-width 6rem
+    display inline
 
 @media screen and (min-width:1201px){
   .mobile-bar {
@@ -576,4 +579,5 @@ export default {
   right 0
   width 100%
   z-index 1000
+
 </style>

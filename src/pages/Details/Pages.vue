@@ -5,8 +5,8 @@
         <a-button type="link" @click="jumpPage(currentIndex - 1)" v-if="currentIndex > 1"><a-icon type="left" />上一篇</a-button>
       </a-col>
       <a-col :span="12" style="text-align:right">
-        <a-button type="link" @click="jumpPage(currentIndex + 1)" v-if="currentIndex < 7">下一篇<a-icon type="right" /></a-button>
-        <a-button type="link" @click="$router.push('/home')" v-if="currentIndex === 7">回到首页<a-icon type="right" /></a-button>
+        <a-button type="link" @click="jumpPage(currentIndex + 1)" v-if="currentIndex < 6">下一篇<a-icon type="right" /></a-button>
+        <a-button type="link" @click="$router.push('/home')" v-if="currentIndex === 6">回到首页<a-icon type="right" /></a-button>
       </a-col>
     </a-row>
   </div>
