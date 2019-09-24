@@ -58,32 +58,32 @@ export default {
           path: 'hotNews'
         },
         {
-          title: '闻动增长研习社之南京天众增长主题研习活动圆满完成',
+          title: '南京天众汽车增长主题培训活动',
           img: require('@/assets/images/news1-3.jpeg'),
           path: 'news1'
         },
         {
-          title: '7月[闻动]会员企业增长演习社活动纪实',
+          title: '南京饰家美软装公司增长主题培训活动',
           img: require('@/assets/images/news2-1.jpeg'),
           path: 'news2'
         },
-        {
-          title: '如何实现客户增长',
-          img: require('@/assets/images/news3.jpeg'),
-          path: 'news3'
-        },
+        // {
+        //   title: '如何实现客户增长',
+        //   img: require('@/assets/images/news3.jpeg'),
+        //   path: 'news3'
+        // },
         // {
         //   title: '如何实现客户增长',
         //   img: require('@/assets/images/business1@2x.png'),
         //   path: 'news4'
         // },
         {
-          title: '闻动私董会走进苏企联',
+          title: '江苏苏企联邀请闻动顾问给会员企业做增长主题私董会活动',
           img: require('@/assets/images/news5/4.jpeg'),
           path: 'news5'
         },
         {
-          title: '闻动第七期私董会圆满成功！',
+          title: '第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕',
           img: require('@/assets/images/news6/2.jpeg'),
           path: 'news6'
         }
@@ -132,7 +132,7 @@ export default {
 
 h4
   font-size 1rem
-  margin-top 5px    
+  margin-top 5px
 
 p
   text-indent 0
@@ -153,7 +153,7 @@ img
     max-height 15rem
     height 15rem
     img {
-      position absolute 
+      position absolute
       left 0
       width 100%
       top -10rem

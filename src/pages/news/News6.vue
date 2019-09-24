@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>闻动第七期私董会圆满成功！</h3>
+    <h3>第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕</h3>
     <div class="sub-title">
       <span>闻动顾问</span>
       <a>闻动顾问</a>
@@ -162,7 +162,7 @@ img
     p
       margin-bottom 0
       line-height 1.7rem
-.theme-container 
+.theme-container
   .main-title
     color rgb(190, 221, 220)
     font-weight bold

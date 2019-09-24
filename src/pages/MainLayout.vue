@@ -2,7 +2,7 @@
   <div class="wrapper-container">
     <div class="nav-bar mobile-bar">
       <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
-      <span class="title">闻动顾问管理有限公司</span>
+      <span class="title">闻动管理顾问（南京）有限公司</span>
       <img src="@/assets/images/menu@2x.png" class="menu-list" alt="" @click="showMenu">
       <a-menu
         class="menu-container"
@@ -25,7 +25,7 @@
       <div class="web-header web-wrapper">
         <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
         <div class="web-title">
-          <h2 style="margin: 0">闻动顾问管理有限公司</h2>
+          <h2 style="margin: 0">闻动管理顾问（南京）有限公司</h2>
           <!-- <span>WENDONG ENTERPRISE MANAGEMENT CONSULTANTS LTD.</span> -->
         </div>
       </div>
@@ -80,7 +80,7 @@
             <div>
             <h4>联系电话</h4>
             <div>
-              <span>客服电话: <a href="tel:025-69904569">025-69904569</a></span>
+              <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
               <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
             </div>
             </div>
@@ -103,7 +103,7 @@
       <section class="contact-tel">
         <h4>联系电话</h4>
         <div>
-          <span>客服电话: <a href="tel:025-69904569">025-69904569</a></span>
+          <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
           <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
         </div>
       </section>
@@ -111,7 +111,7 @@
         <div class="footer-item">
           <h4>闻动业务</h4>
           <!-- <ul>
-            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">企业增长项目</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">增长策略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business2', 'business')">发展战略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business3', 'business')">组织能力顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business4', 'business')">企业文化顾问</a></li>
@@ -166,7 +166,7 @@ export default {
       return [
         {
           key: 'about',
-          name: '关于我们',
+          name: '关于闻动',
           type: 'contacts',
           path: 'about',
           // img: require('@/assets/images/bs.png'),
@@ -174,7 +174,7 @@ export default {
         },
         {
           key: 'home',
-          name: '首页',
+          name: '闻动首页',
           type: 'home',
           path: 'home',
           // img: require('@/assets/images/icon-home.png'),
@@ -182,14 +182,14 @@ export default {
         },
         {
           key: 'business1',
-          name: '闻动业务',
+          name: '闻动内容',
           type: 'schedule',
           path: 'business1',
           children: [
             {
               type: '',
               key: 'business1',
-              name: '企业增长项目',
+              name: '增长策略顾问',
               path: 'business1'
             },
             {
@@ -221,13 +221,14 @@ export default {
               key: 'business6',
               name: '闻动私董会',
               path: 'business6'
-            },
-            {
-              type: '',
-              key: 'business7',
-              name: '闻动企业会员',
-              path: 'business7'
-            },
+            }
+            // ,
+            // {
+            //   type: '',
+            //   key: 'business7',
+            //   name: '闻动企业会员',
+            //   path: 'business7'
+            // },
 
           ]
           // img: require('@/assets/images/icon-bs.png'),
@@ -235,7 +236,7 @@ export default {
         },
         {
           key: 'caseList',
-          name: '经典案例',
+          name: '闻动案例',
           type: 'appstore',
           path: 'caseList',
           // img: require('@/assets/images/icon-case@2x.png'),
@@ -243,7 +244,7 @@ export default {
         },
         {
           key: 'newsList',
-          name: '新闻资讯',
+          name: '闻动资讯',
           type: 'bars',
           path: 'newsList',
           // img: require('@/assets/images/logo/.png'),

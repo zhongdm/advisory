@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>闻动私董会走进苏企联</h3>
+    <h3>江苏苏企联邀请闻动顾问给会员企业做增长主题私董会活动</h3>
     <div class="sub-title">
       <span>闻动顾问</span>
       <a href="">闻动顾问</a>
@@ -184,7 +184,7 @@ img
     p
       margin-bottom 0
       line-height 1.7rem
-.theme-container 
+.theme-container
   .main-title
     color rgb(190, 221, 220)
     font-weight bold

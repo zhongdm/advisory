@@ -27,23 +27,23 @@ export default {
       return [
         {
           key: 'home',
-          name: '首页'
+          name: '闻动首页'
         },
         {
           key: 'business',
-          name: '闻动业务'
+          name: '闻动内容'
         },
         {
           key: 'case',
-          name: '经典案例'
+          name: '闻动案例'
         },
         {
           key: 'news',
-          name: '新闻资讯'
+          name: '闻动资讯'
         },
         {
           key: 'about',
-          name: '关于我们'
+          name: '关于闻动'
         },
         {
           key: 'emp',
