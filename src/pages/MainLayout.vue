@@ -80,8 +80,8 @@
             <div>
             <h4>联系电话</h4>
             <div>
-              <span>客服电话: <a href="tel:025-68029573">025-68029573</a></span>
-              <span>专家直线: <a href="tel:138-133-82808">138-133-82808</a></span>
+              <span>客服电话: <a href="tel:025-69904569">025-69904569</a></span>
+              <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
             </div>
             </div>
           </section>
@@ -103,8 +103,8 @@
       <section class="contact-tel">
         <h4>联系电话</h4>
         <div>
-          <span>客服电话: <a href="tel:025-68029573">025-68029573</a></span>
-          <span>专家直线: <a href="tel:138-133-82808">138-133-82808</a></span>
+          <span>客服电话: <a href="tel:025-69904569">025-69904569</a></span>
+          <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
         </div>
       </section>
       <section class="other-footer">
@@ -228,7 +228,7 @@ export default {
               name: '闻动企业会员',
               path: 'business7'
             },
-            
+
           ]
           // img: require('@/assets/images/icon-bs.png'),
           // selectedImg: require('@/assets/images/icon-bs.png')
