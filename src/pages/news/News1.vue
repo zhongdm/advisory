@@ -1,6 +1,6 @@
 <template>
   <div class="news-container hot-container">
-    <h3 style="text-align:center;margin:2rem 0">闻动增长研习社之南京天众增长主题研习活动圆满完成！</h3>
+    <h3 style="text-align:center;margin:2rem 0">南京天众汽车增长主题培训活动</h3>
     <section>
       <p>2019年7月24日，在南京浦口区“不老传说”民宿酒店，闻动管理顾问（南京）有限公司为南京天众汽车销售服务有限公司开展了一次为期一天的“增长”主题培训。</p>
       <article>
@@ -87,7 +87,7 @@ p
   border 1px dashed rgb(199, 199, 199)
   padding 10px
   background-color rgb(248, 248, 248)
-  border-radius 8px 
+  border-radius 8px
   margin 1rem auto
 
 .img-container

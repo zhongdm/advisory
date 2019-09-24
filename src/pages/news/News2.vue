@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="center-title">7月「闻动」会员企业增长研习社活动纪实</h3>
+    <h3 class="center-title">南京饰家美软装公司增长主题培训活动</h3>
     <article>
       <div class="special-title">
         <!-- <span class="counter">01</span> -->
@@ -74,7 +74,7 @@
   .title
     position relative
     display inline-block
-    // margin 0 auto 
+    // margin 0 auto
     text-align center
     &:before
       content ''

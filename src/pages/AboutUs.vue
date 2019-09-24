@@ -10,7 +10,7 @@
         致力于帮助客户解决盈利和增长问题，追求和客户建立结果导向的长期顾问合作伙伴关系。
       </article>
     </section>
-    <section class="service-container">
+    <!--<section class="service-container">
       <h3>服务内容</h3>
       <article class="text-indent">
         我们的客户分布在多个行业，顾问服务内容主要聚焦在企业增长项目、高管圆桌汇、发展战略、组织能力和企业文化五个方向。
@@ -21,11 +21,11 @@
           <a-row type="flex">
             <a-col :xs="8" :sm="8" :md="24">
               <img src="@/assets/images/service_icon1.png" class="circle-img" alt="">
-              <h4>企业增长项目</h4>
+              <h4>增长策略顾问</h4>
             </a-col>
             <a-col :xs="16" :sm="16" :md="24">
               <div class="service-item">
-                <!-- <h4>企业增长项目</h4> -->
+                &lt;!&ndash; <h4>增长策略顾问</h4> &ndash;&gt;
                 <p>帮助企业梳理商业模式和收入渠道，并同时降本增效从而实现盈利和增长。</p>
               </div>
              </a-col>
@@ -41,7 +41,7 @@
           </a-col>
           <a-col :xs="16" :sm="16" :md="24">
           <div class="service-item">
-             <!-- <h4>高管圆桌汇</h4> -->
+             &lt;!&ndash; <h4>高管圆桌汇</h4> &ndash;&gt;
              <p>主要是发现、讨论组织存在的关键问题，对问题的认知和解决方案达成一致，并协同多部门最终落地解决问题。</p>
           </div>
           </a-col>
@@ -96,7 +96,7 @@
           </section>
         </li>
       </ul>
-    </section>
+    </section>-->
     <section class="who-container">
       <h3>我们是谁</h3>
       <article class="text-indent">
@@ -138,7 +138,7 @@
             </span>
             <img src="@/assets/images/service_self.jpg" alt="">
             <p class="text-indent">
-              快速发展的私营企业是我们服务的客户主体，行业涉及建筑业、制造业和服务业，他们当中不乏上市公司和准备上市的公司。我们帮助我们的私营企业客户澄清发展战略，进行组织结构设计，优化管理体系，提炼企业文化。我们特别注重帮助中小型企业实现盈利和增长的突破，理清商业模式，实现迅速发展和提升。
+              快速发展的私营企业是我们服务的客户主体，行业涉及建筑业、制造业和服务业，他们当中不乏上市公司和准备上市的公司。我们帮助私营企业客户澄清发展战略，进行组织结构设计，优化管理体系，提炼企业文化。我们特别注重帮助中小型企业实现盈利和增长的突破，理清商业模式，实现迅速发展和提升。
             </p>
           </div>
         </a-col>
@@ -152,15 +152,15 @@
         </a-col>
         <a-col :xs="24" :sm="24" :md="8" :span="8">
           <div class="content-list mission-list">
-            <h4>我们的使命</h4>
+            <h4>使命</h4>
             <p>帮助客户实现盈利和增长</p>
           </div>
           <div class="mission-list">
-            <h4>我们的愿景</h4>
+            <h4>愿景</h4>
             <p>成为客户不可缺少的长期合作伙伴</p>
           </div>
           <div class="mission-list">
-            <h4>我们的价值观</h4>
+            <h4>价值观</h4>
             <p>客户价值、员工成长、结果导向</p>
           </div>
         </a-col>
@@ -173,8 +173,8 @@
       <a-row type="flex" justify="center">
         <a-col :span="24">
           <h4>联系热线</h4>
-          <p>客服电话: <a href="tel:025-68029573">025-68029573</a></p>
-          <p>专家直线: <a href="tel:138-133-82808">138-133-82808</a></p>
+          <p>客服电话: <a href="tel:025-69904569">025-6990-4569</a></p>
+          <p>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></p>
         </a-col>
         <!-- <a-col :span="8">
           <div class="img-container">

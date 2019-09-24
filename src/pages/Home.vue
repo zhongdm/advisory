@@ -181,7 +181,7 @@ export default {
       businessList: [
         {
           img: require('@/assets/images/business1@2x.png'),
-          title: '企业增长项目'
+          title: '增长策略顾问'
         },
         {
           img: require('@/assets/images/business2@2x.png'),
@@ -202,11 +202,12 @@ export default {
         {
           img: require('@/assets/images/business6@2x.png'),
           title: '闻动私董会'
-        },
-        {
-          img: require('@/assets/images/business7@2x.png'),
-          title: '闻动企业会员'
-        },
+        }
+        // ,
+        // {
+        //   img: require('@/assets/images/business7@2x.png'),
+        //   title: '闻动企业会员'
+        // },
         // {
         //   img: require('@/assets/images/business8@2x.png'),
         //   title: '智慧城市与科技信息化'
@@ -256,6 +257,10 @@ export default {
         {
           name: '中国兵器',
           img: require('@/assets/images/logo/bingqi.jpg')
+        },
+        {
+          name: '苏州佳禾食品',
+          img: require('@/assets/images/logo/suzhoujiahe.jpg')
         }
       ],
       caseList: [
@@ -314,25 +319,25 @@ export default {
           path: 'hotNews'
         },
         {
-          title: '闻动增长研习社之南京天众增长主题研习活动圆满完成',
+          title: '南京天众汽车增长主题培训活动',
           path: 'news1'
         },
         {
-          title: '7月[闻动]会员企业增长演习社活动纪实',
+          title: '南京饰家美软装公司增长主题培训活动',
           path: 'news2'
         },
         {
-          title: '闻动私董会走进苏企联',
+          title: '江苏苏企联邀请闻动顾问给会员企业做增长主题私董会活动',
           img: require('@/assets/images/news5/4.jpeg'),
           path: 'news5',
           abstract: '以“服务江苏企业、发展江苏企业、成就江苏企业”为使命，实现所有企业家成员的共建、共享、共赢。'
         },
+        //  {
+        //   title: '如何实现客户增长',
+        //   path: 'news3'
+        // },
         {
-          title: '如何实现客户增长',
-          path: 'news3'
-        },
-        {
-          title: '闻动第七期私董会圆满成功！',
+          title: '第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕',
           img: require('@/assets/images/news6/2.jpeg'),
           path: 'news6'
         }
