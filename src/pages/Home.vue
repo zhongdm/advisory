@@ -588,6 +588,8 @@ export default {
 a:hover
   cursor pointer
 
+.business-container
+  margin-top 1rem
 
 @media screen and (max-width: 576px) {
   .home-sub-menu {
@@ -630,7 +632,6 @@ a:hover
   .case-info {
     display: inline-block;
   }
-
 }
 
 .icon-img
