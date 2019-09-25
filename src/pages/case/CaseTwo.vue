@@ -18,7 +18,16 @@
       <h4>解决方法</h4>
       <p>首先对Y公司内影响股权激励成功实施的要素进行了盘点；</p>
       <p>诊断出其股权激励实施的成功概率；</p>
-      <img src="@/assets/images/caseTwo.png" alt="" class="case-second">
+      <div style="margin:.6rem 0 1rem ">
+      <a-row type="flex" class="spirit-img" justify="start">
+        <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="first-img"></span></div></a-col>
+        <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="second-img"></span></div></a-col>
+        <a-col :xs="24" :sm="12" :md="5"><div class="bg-img"><span class="third-img"></span></div></a-col>
+        <a-col :xs="24" :sm="12" :md="5"><div><span class="forth-img"></span></div></a-col>
+        <a-col :xs="24" :sm="12" :md="4"><div><span class="fifth-img"></span></div></a-col>
+      </a-row>
+      </div>
+      <!-- <img src="@/assets/images/caseTwo.png" alt="" class="case-second"> -->
       <p>然后帮助企业对其不足之处进行了完善；</p>
       <p>最后帮助Y公司制定了股权激励方案及股权激励相关制度和文件，并协助其进行实施落地。</p>
     </div>
@@ -92,4 +101,31 @@ export default {
   }
 }
 </style>
+
+<style lang="stylus" scoped>
+.spirit-img
+  span
+    background url('../../assets/images/caseOne.png') no-repeat
+    display block
+    // background-position 0 0
+    background-size cover
+    width 200px
+    height 190px
+    margin auto
+    &.first-img
+      background-position 0 0
+      height 170px
+    &.second-img
+      background-position 0 -170px
+    &.third-img
+      background-position 0 -365px
+      // height 170px
+    &.forth-img
+      background-position 0 -560px
+      height 170px
+    &.fifth-img
+      background-position 0 -725px
+      height 110px
+</style>
+
 

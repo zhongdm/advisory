@@ -64,7 +64,7 @@
     </div>
     <div class="footer">
       <div class="web-wrapper footer-wrapper">
-      <a-row type="flex" justify="space-around" align="middle" style="height:100%;">
+      <!-- <a-row type="flex" justify="space-around" align="middle" style="height:100%;">
         <a-col :span="5">
           <a-row>
             <a-col :span="12"><a @click="$router.push('business1')">顾问内容</a></a-col>
@@ -80,6 +80,42 @@
             <div>
             <h4>联系电话</h4>
             <div>
+              <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
+              <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
+            </div>
+            </div>
+          </section>
+        </a-col>
+        <a-col :span="6">
+            <a-row type="flex" justify="space-around">
+              <a-col :span="12">
+          <img src="@/assets/images/qrcode.png" alt="" class="footer-img-qr">
+          </a-col>
+          <a-col :span="12">
+          <img src="@/assets/images/weibo.jpg" alt="" class="footer-img-wb">
+          </a-col>
+          </a-row>
+        </a-col>
+      </a-row> -->
+
+      <a-row type="flex" justify="space-around" align="middle" style="height:100%;padding-bottom:1rem;">
+        <a-col :span="3">
+          <a-row>
+            <a-col :span="24"><a @click="$router.push('business1')" class="height-equal">顾问内容</a></a-col>
+            <a-col :span="24"><a @click="$router.push('newsList')" class="height-equal">闻动资讯</a></a-col>
+          </a-row>
+        </a-col>
+        <a-col :span="3">
+          <a-row>
+            <a-col :span="24"><a @click="$router.push('caseList')" class="height-equal">闻动案例</a></a-col>
+            <a-col :span="24"><a @click="$router.push('about')" class="height-equal">关于闻动</a></a-col>
+          </a-row>
+        </a-col>
+        <a-col :span="12">
+          <section class="contact-tel">
+            <div>
+            <h4 class="height-equal">联系电话</h4>
+            <div class="height-equal">
               <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
               <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
             </div>
@@ -532,6 +568,10 @@ export default {
     max-width 6rem
     display inline
 
+.height-equal
+  height 2.4rem
+  line-height 2.4rem
+  display block
 @media screen and (min-width:1201px){
   .mobile-bar {
     display none
