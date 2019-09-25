@@ -41,7 +41,7 @@
     <div class="seperator home-sub-menu"></div>
     <div class="business-container" id="business">
       <h3>
-        <img src="@/assets/images/icon-bs.png" alt="" class="icon-img">闻动业务</h3>
+        <img src="@/assets/images/icon-bs.png" alt="" class="icon-img">顾问内容</h3>
       <div>
         <a-row type="flex" justify="start" :gutter="16">
           <a-col :xs="12" :lg="8" v-for="(item, index) in businessList" :key="index">
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="client-container" id="client">
-      <h3><img src="@/assets/images/client@2x.png" alt="" class="icon-img">合作客户</h3>
+      <h3><img src="@/assets/images/client@2x.png" alt="" class="icon-img">闻动客户</h3>
       <div>
         <a-row type="flex" justify="start" :gutter="16">
           <a-col :xs="12" :md="6" :lg="4" v-for="(item, index) in clientList" :key="index">
@@ -67,7 +67,7 @@
     </div>
     <div class="seperator"></div>
     <div class="case-container container" id="case">
-      <h3><img src="@/assets/images/icon-case@2x.png" alt="" class="icon-img">经典案例
+      <h3><img src="@/assets/images/icon-case@2x.png" alt="" class="icon-img">闻动案例
       <a href="javascript:void(0)" @click="$router.push('caseList')" class="more-link" style="float:right;">更多>></a></h3>
       <div class="case-wrapper">
         <div class="case-info">
@@ -115,7 +115,7 @@
     </div>
     <div class="seperator"></div>
     <div class="news-container container" id="news">
-      <h3><img src="@/assets/images/icon-news@2x.png" alt="" class="icon-img">新闻资讯
+      <h3><img src="@/assets/images/icon-news@2x.png" alt="" class="icon-img">闻动资讯
       <a href="javascript:void(0)" @click="$router.push('newsList')" class="more-link" style="float:right;">更多>></a></h3>
       <a-row type="flex" :gutter="16">
           <a-col :xs="24" :md="12">
@@ -155,25 +155,25 @@ export default {
       subMenuList: [
         {
           img: require('@/assets/images/business@2x.png'),
-          title: '闻动业务',
+          title: '顾问内容',
           key: 'business',
           path: 'business1'
         },
         {
           img: require('@/assets/images/classicCase@2x.png'),
-          title: '经典案例',
+          title: '闻动案例',
           path: 'caseList',
           key: 'case',
         },
         {
           img: require('@/assets/images/news@2x.png'),
-          title: '新闻资讯',
+          title: '闻动资讯',
           path: 'newsList',
           key: 'news',
         },
         {
           img: require('@/assets/images/aboutUs@2x.png'),
-          title: '关于我们',
+          title: '关于闻动',
           path: 'about',
           key: 'about',
         }
@@ -251,8 +251,8 @@ export default {
           img: require('@/assets/images/logo/xincheng.jpg')
         },
         {
-          name: '中国电信',
-          img: require('@/assets/images/logo/dx.jpg')
+          name: '中国移动',
+          img: require('@/assets/images/logo/yd.jpg')
         },
         {
           name: '中国兵器',

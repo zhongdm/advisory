@@ -31,7 +31,7 @@ export default {
         },
         {
           key: 'business',
-          name: '闻动内容'
+          name: '顾问内容'
         },
         {
           key: 'case',

@@ -67,12 +67,12 @@
       <a-row type="flex" justify="space-around" align="middle" style="height:100%;">
         <a-col :span="5">
           <a-row>
-            <a-col :span="12"><a @click="$router.push('business1')">闻动业务</a></a-col>
-            <a-col :span="12"><a @click="$router.push('caseList')">案例展示</a></a-col>
+            <a-col :span="12"><a @click="$router.push('business1')">顾问内容</a></a-col>
+            <a-col :span="12"><a @click="$router.push('caseList')">闻动案例</a></a-col>
           </a-row>
           <a-row>
-            <a-col :span="12"><a @click="$router.push('newsList')">新闻资讯</a></a-col>
-            <a-col :span="12"><a @click="$router.push('about')">关于我们</a></a-col>
+            <a-col :span="12"><a @click="$router.push('newsList')">闻动资讯</a></a-col>
+            <a-col :span="12"><a @click="$router.push('about')">关于闻动</a></a-col>
           </a-row>
         </a-col>
         <a-col :span="13">
@@ -116,7 +116,7 @@
       </section>
       <section class="other-footer">
         <div class="footer-item">
-          <h4>闻动业务</h4>
+          <h4>顾问内容</h4>
           <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">增长策略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business2', 'business')">发展战略顾问</a></li>
@@ -128,19 +128,19 @@
           </ul> -->
         </div>
         <div class="footer-item">
-          <h4>案例展示</h4>
+          <h4>闻动案例</h4>
           <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('caseList', 'case')">经典案例</a></li>
           </ul> -->
         </div>
         <div class="footer-item">
-          <h4>资讯中心</h4>
+          <h4>闻动资讯</h4>
           <!-- <ul>
-            <li><a href="javascript:void(0);" @click="footerClick('newsList', 'news')">新闻资讯</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('newsList', 'news')">闻动资讯</a></li>
           </ul> -->
         </div>
         <div class="footer-item">
-          <h4>关于我们</h4>
+          <h4>关于闻动</h4>
           <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('about', 'about')">关于我们</a></li>
           </ul> -->
@@ -189,7 +189,7 @@ export default {
         },
         {
           key: 'business1',
-          name: '闻动内容',
+          name: '顾问内容',
           type: 'schedule',
           path: 'business1',
           children: [
