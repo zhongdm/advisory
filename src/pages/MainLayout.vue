@@ -98,7 +98,7 @@
         </a-col>
       </a-row> -->
 
-      <a-row type="flex" justify="space-around" align="middle" style="height:100%;padding-bottom:1rem;">
+      <a-row type="flex" justify="space-around" align="middle" style="height:100%;">
         <a-col :span="3">
           <a-row>
             <a-col :span="24"><a @click="$router.push('business1')" class="height-equal">顾问内容</a></a-col>
@@ -111,25 +111,36 @@
             <a-col :span="24"><a @click="$router.push('about')" class="height-equal">关于闻动</a></a-col>
           </a-row>
         </a-col>
-        <a-col :span="12">
+        <a-col :span="6">
           <section class="contact-tel">
             <div>
             <h4 class="height-equal">联系电话</h4>
             <div class="height-equal">
               <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
-              <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
+              <!-- <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span> -->
             </div>
             </div>
           </section>
         </a-col>
         <a-col :span="6">
+          <div class="contact-tel-two">
+          <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
+          </div>
+        </a-col>
+        <a-col :span="6">
           <!-- <div class="last-code"> -->
-            <a-row type="flex" justify="space-around">
+            <a-row type="flex" justify="space-around" gutter="16">
               <a-col :span="12">
-          <img src="@/assets/images/qrcode.png" alt="" class="footer-img-qr">
+                <div class="footer-qrcode">
+                  <span>关注我们</span>
+                <img src="@/assets/images/qrcode.png" alt="" class="footer-img-qr">
+                </div>
           </a-col>
           <a-col :span="12">
-          <img src="@/assets/images/weibo.jpg" alt="" class="footer-img-wb">
+            <div class="footer-qrcode">
+              <span><img style="margin-right:5px;" src="@/assets/images/weibo_logo.png" alt="">官方微博</span>
+              <img src="@/assets/images/weibo.jpg" alt="" class="footer-img-wb">
+            </div>
           </a-col>
           </a-row>
         <!-- </div> -->
@@ -208,20 +219,20 @@ export default {
     menuList () {
       return [
         {
-          key: 'about',
-          name: '关于闻动',
-          type: 'contacts',
-          path: 'about',
-          // img: require('@/assets/images/bs.png'),
-          // selectedImg: '@/assets/images/icon-case@2x.png'
-        },
-        {
           key: 'home',
           name: '闻动首页',
           type: 'home',
           path: 'home',
           // img: require('@/assets/images/icon-home.png'),
           // selectedImg: require('@/assets/images/icon-home.png')
+        },
+        {
+          key: 'about',
+          name: '关于闻动',
+          type: 'contacts',
+          path: 'about',
+          // img: require('@/assets/images/bs.png'),
+          // selectedImg: '@/assets/images/icon-case@2x.png'
         },
         {
           key: 'business1',
@@ -533,8 +544,17 @@ export default {
     justify-content center
     h4
       color #fff
+      padding-bottom 0
+      margin-bottom 0
+      font-size 1rem
+      font-weight normal
     span
       margin-right 3rem
+  .contact-tel-two
+    height 6.8rem
+    vertical-align bottom
+    display table-cell
+    line-height 3.4rem
   .other-footer
     margin-top 1rem
     display flex
@@ -559,19 +579,31 @@ export default {
 
 .footer-wrapper
   // padding 1rem !important
-  height 7rem
+  height 10rem
+  font-size 1rem
+  margin-bottom 1rem !important
   a
     color #fff
     &:hover
       text-decoration underline
   .footer-img-wb, .footer-img-qr
-    max-width 6rem
+    // max-width 6rem
+    width 100%
     display inline
 
 .height-equal
-  height 2.4rem
-  line-height 2.4rem
+  height 3.4rem
+  line-height 3.4rem
   display block
+
+.footer-qrcode
+  span
+    margin 0 auto 5px
+    display block
+    text-align center
+    height 2rem
+    line-height 2rem
+
 @media screen and (min-width:1201px){
   .mobile-bar {
     display none
