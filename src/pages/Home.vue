@@ -154,6 +154,12 @@ export default {
     return {
       subMenuList: [
         {
+          img: require('@/assets/images/aboutUs@2x.png'),
+          title: '关于闻动',
+          path: 'about',
+          key: 'about',
+        },
+        {
           img: require('@/assets/images/business@2x.png'),
           title: '顾问内容',
           key: 'business',
@@ -170,12 +176,6 @@ export default {
           title: '闻动资讯',
           path: 'newsList',
           key: 'news',
-        },
-        {
-          img: require('@/assets/images/aboutUs@2x.png'),
-          title: '关于闻动',
-          path: 'about',
-          key: 'about',
         }
       ],
       businessList: [
