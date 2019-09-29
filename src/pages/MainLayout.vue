@@ -3,7 +3,9 @@
     <div class="nav-bar mobile-bar">
       <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
       <span class="title">闻动管理顾问（南京）有限公司</span>
-      <img src="@/assets/images/menu@2x.png" class="menu-list" alt="" @click="showMenu">
+      <div class="menu-list">
+      <img src="@/assets/images/menu@2x.png" class="menu-icon" alt="" @click="showMenu">
+      </div>
       <a-menu
         class="menu-container"
         v-show="menuVisible"
@@ -494,18 +496,25 @@ export default {
   text-align left
   line-height 3rem
   .title
-    font-size 1.2rem
+    font-size 1rem
   .icon-img
     height 100%
     padding .5rem
   .menu-list
     position absolute
-    right 1rem
-    width 1.4rem
+    // right 1rem
+    right 0
+    bottom 0
+    top 0
+    width 2rem
     line-height 100%
-    top .9rem
+    background-color #fff 
     &:hover
       cursor pointer
+    .menu-icon
+      width 1.4rem
+      line-height 100%
+      margin-top .9rem
   .menu-container
     position absolute
     top 3rem
@@ -518,7 +527,7 @@ export default {
   height 4rem
   .icon-img
     height 100%
-    padding .5rem
+    padding .7rem
     vertical-align middle
   .web-title
     display inline-block
@@ -624,14 +633,18 @@ export default {
   .mobile-bar {
     display block
     margin-bottom 1rem
-    padding-left 1rem
+    // padding-left 1rem
     position fixed
     top 0
     z-index 1000
     width 100%
+    font-size .8rem
     background #fff
     box-shadow: 4px 2px 8px rgba(187,184,184,0.2),
                   -4px 2px 8px rgba(187,184,184,0.2)
+    text-overflow ellipsis
+    overflow hidden
+    white-space nowrap
   }
   .web-bar {
     display none

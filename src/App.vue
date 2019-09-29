@@ -51,12 +51,12 @@ p {
 }
 @media screen and (max-width: 560px) {
   #app {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
   #app {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
