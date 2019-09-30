@@ -122,10 +122,12 @@ export default {
         position absolute
         left 0
         width 100%
+        height 100%
     .news-content
       margin 10px 5px
       vertical-align middle
       text-align left
+      margin-left 15px
       span
         font-size .9rem
         display block

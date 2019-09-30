@@ -3,8 +3,8 @@
     <div class="nav-bar mobile-bar">
       <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
       <span class="title">闻动管理顾问（南京）有限公司</span>
-      <div class="menu-list">
-      <img src="@/assets/images/menu@2x.png" class="menu-icon" alt="" @click="showMenu">
+      <div class="menu-list" @click="showMenu">
+        <img src="@/assets/images/menu@2x.png" class="menu-icon" alt="" >
       </div>
       <a-menu
         class="menu-container"
@@ -131,7 +131,7 @@
         </a-col>
         <a-col :span="6">
           <!-- <div class="last-code"> -->
-            <a-row type="flex" justify="space-around" gutter="16">
+            <a-row type="flex" justify="space-around" :gutter="16">
               <a-col :span="12">
                 <div class="footer-qrcode">
                   <span>关注我们</span>
@@ -500,6 +500,7 @@ export default {
   .icon-img
     height 100%
     padding .5rem
+    padding-right 0
   .menu-list
     position absolute
     // right 1rem
@@ -643,7 +644,7 @@ export default {
     box-shadow: 4px 2px 8px rgba(187,184,184,0.2),
                   -4px 2px 8px rgba(187,184,184,0.2)
     text-overflow ellipsis
-    overflow hidden
+    // overflow hidden
     white-space nowrap
   }
   .web-bar {
