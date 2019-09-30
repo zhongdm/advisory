@@ -110,7 +110,7 @@ export default {
     margin-top 1rem
     margin-bottom 1rem
     .news-item
-      margin .8rem auto
+      margin auto
       img
         width 100%
     .img-container
