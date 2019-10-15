@@ -21,11 +21,11 @@
           <a-row type="flex">
             <a-col :xs="8" :sm="8" :md="24">
               <img src="@/assets/images/service_icon1.png" class="circle-img" alt="">
-              <h4>增长策略顾问</h4>
+              <h4>增长战略顾问</h4>
             </a-col>
             <a-col :xs="16" :sm="16" :md="24">
               <div class="service-item">
-                &lt;!&ndash; <h4>增长策略顾问</h4> &ndash;&gt;
+                &lt;!&ndash; <h4>增长战略顾问</h4> &ndash;&gt;
                 <p>帮助企业梳理商业模式和收入渠道，并同时降本增效从而实现盈利和增长。</p>
               </div>
              </a-col>

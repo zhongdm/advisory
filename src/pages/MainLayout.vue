@@ -167,7 +167,7 @@
         <div class="footer-item">
           <h4>顾问内容</h4>
           <!-- <ul>
-            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">增长策略顾问</a></li>
+            <li><a href="javascript:void(0);" @click="footerClick('business1', 'business')">增长战略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business2', 'business')">发展战略顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business3', 'business')">组织能力顾问</a></li>
             <li><a href="javascript:void(0);" @click="footerClick('business4', 'business')">企业文化顾问</a></li>
@@ -245,7 +245,7 @@ export default {
             {
               type: '',
               key: 'business1',
-              name: '增长策略顾问',
+              name: '增长战略顾问',
               path: 'business1'
             },
             {
@@ -509,7 +509,7 @@ export default {
     top 0
     width 2rem
     line-height 100%
-    background-color #fff 
+    background-color #fff
     &:hover
       cursor pointer
     .menu-icon

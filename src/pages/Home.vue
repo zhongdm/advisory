@@ -181,7 +181,7 @@ export default {
       businessList: [
         {
           img: require('@/assets/images/business1@2x.png'),
-          title: '增长策略顾问'
+          title: '增长战略顾问'
         },
         {
           img: require('@/assets/images/business2@2x.png'),
