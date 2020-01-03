@@ -113,22 +113,23 @@
             <a-col :span="24"><a @click="$router.push('about')" class="height-equal">关于闻动</a></a-col>
           </a-row>
         </a-col>
-        <a-col :span="6">
+        <a-col :span="12">
           <section class="contact-tel">
             <div>
             <h4 class="height-equal">联系电话</h4>
             <div class="height-equal">
-              <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
+              <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
+              <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
               <!-- <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span> -->
             </div>
             </div>
           </section>
         </a-col>
-        <a-col :span="6">
+        <!-- <a-col :span="6">
           <div class="contact-tel-two">
           <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
           </div>
-        </a-col>
+        </a-col> -->
         <a-col :span="6">
           <!-- <div class="last-code"> -->
             <a-row type="flex" justify="space-around" :gutter="16">
@@ -159,7 +160,7 @@
       <section class="contact-tel">
         <h4>联系电话</h4>
         <div>
-          <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span>
+          <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
           <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
         </div>
       </section>
