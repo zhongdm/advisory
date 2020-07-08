@@ -2,7 +2,7 @@
   <div class="wrapper-container">
     <div class="nav-bar mobile-bar">
       <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
-      <span class="title">闻动管理顾问（南京）有限公司</span>
+      <span class="title">闻动管理顾问（上海·南京）有限公司</span>
       <div class="menu-list" @click="showMenu">
         <img src="@/assets/images/menu@2x.png" class="menu-icon" alt="" >
       </div>
@@ -27,7 +27,7 @@
       <div class="web-header web-wrapper">
         <img src="@/assets/images/logo@2x.png" class="icon-img" alt="">
         <div class="web-title">
-          <h2 style="margin: 0">闻动管理顾问（南京）有限公司</h2>
+          <h2 style="margin: 0">闻动管理顾问（上海·南京）有限公司</h2>
           <!-- <span>WENDONG ENTERPRISE MANAGEMENT CONSULTANTS LTD.</span> -->
         </div>
       </div>
