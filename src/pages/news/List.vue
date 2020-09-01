@@ -62,11 +62,11 @@ export default {
           img: require('@/assets/images/news1-3.jpeg'),
           path: 'news1'
         },
-        {
-          title: '南京饰家美软装公司增长主题培训活动',
-          img: require('@/assets/images/news2-1.jpeg'),
-          path: 'news2'
-        },
+        // {
+        //   title: '南京饰家美软装公司增长主题培训活动',
+        //   img: require('@/assets/images/news2-1.jpeg'),
+        //   path: 'news2'
+        // },
         // {
         //   title: '如何实现客户增长',
         //   img: require('@/assets/images/news3.jpeg'),

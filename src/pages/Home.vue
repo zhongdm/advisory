@@ -322,10 +322,10 @@ export default {
           title: '南京天众汽车增长主题培训活动',
           path: 'news1'
         },
-        {
-          title: '南京饰家美软装公司增长主题培训活动',
-          path: 'news2'
-        },
+        // {
+        //   title: '南京饰家美软装公司增长主题培训活动',
+        //   path: 'news2'
+        // },
         {
           title: '江苏苏企联邀请闻动顾问给会员企业做增长主题私董会活动',
           img: require('@/assets/images/news5/4.jpeg'),
