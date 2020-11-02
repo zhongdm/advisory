@@ -2,7 +2,7 @@
   <div class="news-container hot-container">
     <h3 style="text-align:center;margin:2rem 0">南京天众汽车增长主题培训活动</h3>
     <section>
-      <p>2019年7月24日，在南京浦口区“不老传说”民宿酒店，闻动管理顾问（上海·南京）有限公司为南京天众汽车销售服务有限公司开展了一次为期一天的“增长”主题培训。</p>
+      <p>2019年7月24日，在南京浦口区“不老传说”民宿酒店，闻动管理顾问（南京）有限公司为南京天众汽车销售服务有限公司开展了一次为期一天的“增长”主题培训。</p>
       <article>
         <div class="block-title">
           <span>“增长”的思维模型</span>

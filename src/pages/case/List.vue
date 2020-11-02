@@ -1,20 +1,20 @@
 <template>
-  <div class="list-container">
-    <div class="main-news list-item" v-if="newsList.length > 0"
-      @click="clickCase(newsList[0])">
+  <div class="list-container" v-if="newsList.length > 0">
+    <div class="main-news list-item" v-for="(list, index) in newsList" :key="index"
+      @click="clickCase(list)">
       <a-row type="flex">
         <a-col :span="24">
-      <img :src="newsList[0].img" alt="" class="icon-img">
+      <img :src="list.img" alt="" class="icon-img">
       </a-col>
       <a-col :span="24">
       <div class="main-news-detail">
-        <h3>{{newsList[0].title}}</h3>
-        <p>{{newsList[0].content}}</p>
+        <h3>{{list.title}}</h3>
+        <p>{{list.content}}</p>
       </div>
       </a-col>
       </a-row>
     </div>
-    <div class="news-container">
+    <!-- <div class="news-container">
       <a-row type="flex">
         <a-col :xs="24" :lg="12" :md="12" v-for="(item, index) in newsList.slice(1)" :key="index">
           <div class="news-item list-item"
@@ -33,7 +33,7 @@
           </div>
         </a-col>
       </a-row>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -47,7 +47,7 @@ export default {
         content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。',
         path: 'caseOne'
       },{
-        img: require('@/assets/images/case2-m.jpg'),
+        img: require('@/assets/images/case2-web.jpg'),
         title: '某宠物用品公司股权激励项目',
         content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。',
         path: 'caseTwo'
