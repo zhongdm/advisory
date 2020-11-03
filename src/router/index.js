@@ -8,7 +8,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: 'about'
+      redirect: 'home'
     },,
     {
       path: '/home',

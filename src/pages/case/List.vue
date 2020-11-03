@@ -95,10 +95,14 @@ p
   text-indent 0
   display -webkit-inline-box
   -webkit-box-orient vertical
-  -webkit-line-clamp 2
-  overflow hidden
   font-size .9rem
   color #737373
 img
   width 100%
+
+.list-item
+  margin-bottom 20px
+  &:last-child
+    margin-bottom 0
+
 </style>

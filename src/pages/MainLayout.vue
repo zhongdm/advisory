@@ -214,7 +214,7 @@ import eventBus from '../common/eventBus'
 export default {
   data () {
     return {
-      selectedKey: ['about'],
+      selectedKey: ['home'],
       menuVisible: false
     }
   },
