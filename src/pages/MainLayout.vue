@@ -151,7 +151,7 @@
       </a-row>
       </div>
       <div class="copy-right">
-        Copyright Wendong | All Rights Reserved | 苏ICP备19040864号
+        Copyright Wendong | All Rights Reserved | <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备19040864号</a>
       </div>
     </div>
 
@@ -210,6 +210,7 @@
 
 <script>
 import eventBus from '../common/eventBus'
+import A from "./a";
 
 export default {
   data () {
@@ -318,6 +319,7 @@ export default {
     }
   },
   components: {
+    A,
     BottomMenu: () => import('@/components/BottomMenu')
   },
   mounted () {
