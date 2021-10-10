@@ -44,8 +44,8 @@
         <img src="@/assets/images/icon-bs.png" alt="" class="icon-img">顾问内容</h3>
       <div>
         <a-row type="flex" justify="start" :gutter="16">
-          <a-col :xs="12" :lg="8" v-for="(item, index) in businessList" :key="index">
-            <div class="list-item" @click="clickBusiness(item, index + 1)">
+          <a-col :xs="12" :lg="12" v-for="(item, index) in businessList" :key="index">
+            <div class="list-item" @click="clickBusiness(item, index*10 + 11)">
               <img :src="item.img" alt="">
               <span>{{item.title}}</span>
             </div>
@@ -163,7 +163,7 @@ export default {
           img: require('@/assets/images/business@2x.png'),
           title: '顾问内容',
           key: 'business',
-          path: 'business1'
+          path: 'business11'
         },
         {
           img: require('@/assets/images/classicCase@2x.png'),
@@ -181,24 +181,24 @@ export default {
       businessList: [
         {
           img: require('@/assets/images/business1@2x.png'),
-          title: '增长战略顾问'
+          title: '战略引领'
         },
         {
           img: require('@/assets/images/business2@2x.png'),
-          title: '发展战略顾问'
+          title: '人才驱动'
         },
         {
           img: require('@/assets/images/business3@2x.png'),
-          title: '企业文化顾问'
+          title: '教练赋能'
         },
-        {
-          img: require('@/assets/images/business4@2x.png'),
-          title: '组织能力顾问'
-        },
-        {
-          img: require('@/assets/images/business5@2x.png'),
-          title: '高管圆桌汇'
-        },
+        // {
+        //   img: require('@/assets/images/business4@2x.png'),
+        //   title: '组织能力顾问'
+        // },
+        // {
+        //   img: require('@/assets/images/business5@2x.png'),
+        //   title: '高管圆桌汇'
+        // },
         {
           img: require('@/assets/images/business6@2x.png'),
           title: '闻动私董会'
@@ -265,11 +265,11 @@ export default {
       ],
       caseList: [
         {
-          path: 'caseone',
-          img: require('@/assets/images/case1-m.jpg'),
-          webImg: require('@/assets/images/case1-web.jpg'),
-          title: '某大型现代化食品企业人才盘点项目',
-          content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
+          path: 'caseThree',
+          img: require('@/assets/images/case3-m.png'),
+          webImg: require('@/assets/images/case3-web.png'),
+          title: '某生产制造型企业人才盘点项目的整体思路',
+          content: '该企业从人才盘点项目切入，上接公司发展战略需求，通过人才驱动机制的构建，明确了公司未来三年人才战略和人才梯队建设方略。下接内外部针对核心团队的教练赋能系统，从而有效提升组织核心能力，为战略落地提供有力支撑。'
         },
         {
           path: 'casetwo',

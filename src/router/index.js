@@ -26,9 +26,19 @@ const router = new Router({
       component: () => import('@/pages/Details/Business1.vue')
     },
     {
+      path: '/business11',
+      name: 'Business11',
+      component: () => import('@/pages/Details/Business11.vue')
+    },
+    {
       path: '/business2',
       name: 'Business2',
       component: () => import('@/pages/Details/Business2.vue')
+    },
+    {
+      path: '/business21',
+      name: 'Business21',
+      component: () => import('@/pages/Details/Business21.vue')
     },
     {
       path: '/business3',
@@ -36,9 +46,19 @@ const router = new Router({
       component: () => import('@/pages/Details/Business3.vue')
     },
     {
+      path: '/business31',
+      name: 'Business31',
+      component: () => import('@/pages/Details/Business31.vue')
+    },
+    {
       path: '/business4',
       name: 'Business4',
       component: () => import('@/pages/Details/Business4.vue')
+    },
+    {
+      path: '/business41',
+      name: 'Business41',
+      component: () => import('@/pages/Details/Business41.vue')
     },
     {
       path: '/business5',
@@ -69,6 +89,11 @@ const router = new Router({
       path: '/casetwo',
       name: 'casetwo',
       component: () => import('@/pages/case/CaseTwo.vue')
+    },
+    {
+      path: '/caseThree',
+      name: 'casethree',
+      component: () => import('@/pages/case/CaseThree.vue')
     },
     {
       path: '/about',
@@ -110,7 +135,7 @@ const router = new Router({
       name: 'News6',
       component: () => import('@/pages/news/News6.vue')
     },
-    
+
   ]
 })
 

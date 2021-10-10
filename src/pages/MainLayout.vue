@@ -118,7 +118,7 @@
             <div>
             <h4 class="height-equal">联系电话</h4>
             <div class="height-equal">
-              <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
+              <span>专家直线: <a href="tel:195-3156-2808">195-3156-2808</a></span>
               <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
               <!-- <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span> -->
             </div>
@@ -161,7 +161,7 @@
         <h4>联系电话</h4>
         <div>
           <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
-          <span>专家直线: <a href="tel:138-1338-2808">138-1338-2808</a></span>
+          <span>专家直线: <a href="tel:195-3156-2808">195-3156-2808</a></span>
         </div>
       </section>
       <section class="other-footer">
@@ -239,47 +239,47 @@ export default {
           // selectedImg: '@/assets/images/icon-case@2x.png'
         },
         {
-          key: 'business1',
+          key: 'business11',
           name: '顾问内容',
           type: 'schedule',
-          path: 'business1',
+          path: 'business11',
           children: [
             {
               type: '',
-              key: 'business1',
-              name: '增长战略顾问',
-              path: 'business1'
+              key: 'business11',
+              name: '战略引领',
+              path: 'business11'
             },
             {
               type: '',
-              key: 'business2',
-              name: '发展战略顾问',
-              path: 'business2'
+              key: 'business21',
+              name: '人才驱动',
+              path: 'business21'
             },
             {
               type: '',
-              key: 'business3',
-              name: '企业文化顾问',
-              path: 'business3'
+              key: 'business31',
+              name: '教练赋能',
+              path: 'business31'
             },
             {
               type: '',
-              key: 'business4',
-              name: '组织能力顾问',
-              path: 'business4'
-            },
-            {
-              type: '',
-              key: 'business5',
-              name: '高管圆桌汇',
-              path: 'business5'
-            },
-            {
-              type: '',
-              key: 'business6',
+              key: 'business41',
               name: '闻动私董会',
-              path: 'business6'
+              path: 'business41'
             }
+            // {
+            //   type: '',
+            //   key: 'business5',
+            //   name: '高管圆桌汇',
+            //   path: 'business5'
+            // },
+            // {
+            //   type: '',
+            //   key: 'business6',
+            //   name: '闻动私董会',
+            //   path: 'business6'
+            // }
             // ,
             // {
             //   type: '',
