@@ -272,11 +272,11 @@ export default {
           content: '该企业从人才盘点项目切入，上接公司发展战略需求，通过人才驱动机制的构建，明确了公司未来三年人才战略和人才梯队建设方略。下接内外部针对核心团队的教练赋能系统，从而有效提升组织核心能力，为战略落地提供有力支撑。'
         },
         {
-          path: 'casetwo',
-          img: require('@/assets/images/case2-m.jpg'),
-          webImg: require('@/assets/images/case2-web.jpg'),
-          title: '某宠物用品公司股权激励项目',
-          content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。'
+          path: 'caseone',
+          img: require('@/assets/images/case1-m.jpg'),
+          webImg: require('@/assets/images/case1-web.jpg'),
+          title: '某大型现代化食品企业人才盘点项目',
+          content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。'
         }
       ],
       personList: [

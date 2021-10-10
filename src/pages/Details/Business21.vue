@@ -10,9 +10,6 @@
     <div class="content-container">
       <h4>人才驱动从人才盘点开始</h4>
       <p>人才驱动的实施必须借助人才盘点工作的开展，首先了解人才现状，基于人才战略的需求，构建人才标准，精准识别人才，发现并发展优秀人才，从而提升人才管理的有效性，促进人才战略的落实。</p>
-      <section>
-        <img src="@/assets/images/newfix/rencaipandian1.png" alt="" class="block-img">
-      </section>
     </div>
     <div class="content-container">
       <h4>关于“人才盘点”项目的简介</h4>

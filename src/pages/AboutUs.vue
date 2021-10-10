@@ -110,7 +110,7 @@
         </li>
       </ul>
     </section>-->
-    <section class="who-container">
+<!--    <section class="who-container">
       <h3>我们是谁</h3>
       <article class="text-indent">
         闻动管理顾问公司是一家管理咨询顾问公司，专注于帮助企业解决在实现盈利和增长过程中遇到的问题，涉及发展战略、组织结构、组织能力、运营体系、人力资源管理体系等多方面专业领域。
@@ -119,18 +119,18 @@
         <a-col :xs="24" :sm="24" :md="8" :span="8">
           <img src="@/assets/images/service_who1.jpg" alt="">
         </a-col>
-        <!-- <a-col :xs="24" :sm="24" :md="8"  :span="8">
+        &lt;!&ndash; <a-col :xs="24" :sm="24" :md="8"  :span="8">
           <img src="@/assets/images/service_who2.jpg" alt="">
-        </a-col> -->
+        </a-col> &ndash;&gt;
         <a-col :xs="24" :sm="24"  :md="8" :span="8">
           <img src="@/assets/images/service_who3.jpg" alt="">
         </a-col>
       </a-row>
-    </section>
+    </section>-->
     <section>
       <h3>我们为谁服务</h3>
       <article class="text-indent">
-        我们的客户既包括了国有企业也包括私营企业，主要分布于江浙沪一带。
+        我们的客户既包括了国有企业也包括上市公司和民营企业，主要分布于江浙沪一带。
       </article>
       <a-row type="flex" justify="space-between" :gutter="16">
         <a-col :xs="24" :sm="24"  :md="12" :span="12">
@@ -147,11 +147,11 @@
         <a-col :xs="24" :sm="24" :md="12"  :span="12">
           <div class="objection-first object-item">
             <span>
-              <em>60%</em>私营企业
+              <em>60%</em>上市公司和民营企业
             </span>
             <img src="@/assets/images/service_self.jpg" alt="">
             <p class="text-indent">
-              快速发展的私营企业是我们服务的客户主体，行业涉及建筑业、制造业和服务业，他们当中不乏上市公司和准备上市的公司。我们帮助私营企业客户澄清发展战略，进行组织结构设计，优化管理体系，提炼企业文化。我们特别注重帮助中小型企业实现盈利和增长的突破，理清商业模式，实现迅速发展和提升。
+              快速发展的上市公司和民营企业是我们服务的客户主体，行业涉及建筑业、制造业和服务业，他们当中不乏上市公司和准备上市的公司。我们帮助上市公司和民营企业客户澄清发展战略，进行组织结构设计，优化管理体系，提炼企业文化。我们特别注重帮助中小型企业实现盈利和增长的突破，理清商业模式，实现迅速发展和提升。
             </p>
           </div>
         </a-col>

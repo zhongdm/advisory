@@ -51,12 +51,14 @@ export default {
         title: '某大型现代化食品企业人才盘点项目',
         content: '需要对营销部门和制造中心两个核心部门的人才状况进行深入评估和分析，以确保当前的人才能够支撑企业未来发展战略的需求。',
         path: 'caseOne'
-      }, {
-        img: require('@/assets/images/case2-web.jpg'),
-        title: '某宠物用品公司股权激励项目',
-        content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。',
-        path: 'caseTwo'
-      }]
+      }
+        /*, {
+          img: require('@/assets/images/case2-web.jpg'),
+          title: '某宠物用品公司股权激励项目',
+          content: '希望运用股权激励的方式整合内外部合作资源，激发公司活力，从而提升公司业绩。',
+          path: 'caseTwo'
+        }*/
+      ]
     }
   },
   methods: {
