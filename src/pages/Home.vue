@@ -312,11 +312,17 @@ export default {
         }
       ],
       newsList: [
+        // {
+        //   title: '闻动顾问之江苏益和股权激励项目顺利启动！',
+        //   img: require('@/assets/images/hotNew-1.jpeg'),
+        //   abstract: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。',
+        //   path: 'hotNews'
+        // },
         {
-          title: '闻动顾问之江苏益和股权激励项目顺利启动！',
-          img: require('@/assets/images/hotNew-1.jpeg'),
-          abstract: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。',
-          path: 'hotNews'
+          title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
+          img: require('@/assets/images/hotNew-11.jpg'),
+          abstract: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！',
+          path: ''
         },
         {
           title: '南京天众汽车增长主题培训活动',
@@ -336,6 +342,12 @@ export default {
         //   title: '如何实现客户增长',
         //   path: 'news3'
         // },
+        {
+          title: '签约湖南省赢在演说家教育机构全国事业合伙人',
+          img: require('@/assets/images/news7/1.jpg'),
+          path: 'news7',
+          abstract: '闻动顾问创始人毛雷先生于2021年7月3日正式签约湖南省赢在演说家教育机构全国事业合伙人，同时荣获赢在演说领袖学院颁发的“演说影响力”大奖荣誉证书。'
+        },
         {
           title: '第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕',
           img: require('@/assets/images/news6/2.jpeg'),
