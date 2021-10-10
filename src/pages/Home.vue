@@ -119,11 +119,16 @@
       <a href="javascript:void(0)" @click="$router.push('newsList')" class="more-link" style="float:right;">更多>></a></h3>
       <a-row type="flex" :gutter="16">
           <a-col :xs="24" :md="12">
-            <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
+            <!-- <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
               <img :src="newsList[0].img" alt="">
               <h4>{{newsList[0].title}}</h4>
               <p>{{newsList[0].abstract}}</p>
-            </div>
+            </div> -->
+            <a href="https://mp.weixin.qq.com/s/9i2GepdmVCQiIJl5GvzGog" class="hot-news" target="_blank">
+              <img :src="newsList[0].img" alt="">
+              <h4>{{newsList[0].title}}</h4>
+              <p>{{newsList[0].abstract}}</p>
+            </a>
             <ul class="news-list">
               <li v-for="(item, index) in newsList.slice(1, 3)" :key="index"><a @click="showNews(item)">{{item.title}}</a><a-icon class="icon" type="right" /></li>
             </ul>

@@ -1,7 +1,6 @@
 <template>
   <div class="list-container">
-    <div class="main-news list-item" v-if="newsList.length > 0"
-      @click="showMenu(newsList[0])">
+    <a href="https://mp.weixin.qq.com/s/9i2GepdmVCQiIJl5GvzGog" target="_blank" class="main-news list-item" v-if="newsList.length > 0">
       <a-row type="flex">
         <a-col :span="24">
           <div class="clip-img">
@@ -21,7 +20,7 @@
           </div>
         </a-col>
       </a-row>
-    </div>
+    </a>
     <div class="news-container">
       <a-row type="flex" :gutter="16">
         <a-col :xs="24" :lg="6" :md="6" v-for="(item, index) in newsList.slice(1)" :key="index">
