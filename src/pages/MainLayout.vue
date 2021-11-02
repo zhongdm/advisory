@@ -116,7 +116,10 @@
         <a-col :span="12">
           <section class="contact-tel">
             <div>
-            <h4 class="height-equal">联系电话</h4>
+<!--            <h4 class="height-equal">联系电话</h4>-->
+            <div class="height-equal">
+              <span>专家微信: ml13813382808</span>
+            </div>
             <div class="height-equal">
               <span>专家直线: <a href="tel:195-3156-2808">195-3156-2808</a></span>
               <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
@@ -158,7 +161,11 @@
     <div class="footer" style="display:none">
       <div class="web-wrapper footer-wrapper">
       <section class="contact-tel">
-        <h4>联系电话</h4>
+<!--        <h4>联系电话</h4>-->
+        <div>
+          <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
+          <span>专家微信: ml13813382808</span>
+        </div>
         <div>
           <!-- <span>客服电话: <a href="tel:025-69904569">025-6990-4569</a></span> -->
           <span>专家直线: <a href="tel:195-3156-2808">195-3156-2808</a></span>

@@ -1,6 +1,6 @@
 <template>
   <div class="list-container">
-    <a href="https://mp.weixin.qq.com/s/9i2GepdmVCQiIJl5GvzGog" target="_blank" class="main-news list-item" v-if="newsList.length > 0">
+    <a href="javascript:" target="_blank" class="main-news list-item" v-if="newsList.length > 0">
       <a-row type="flex">
         <a-col :span="24">
           <div class="clip-img">
@@ -61,6 +61,11 @@ export default {
           img: require('@/assets/images/hotNew-11.jpg'),
           content: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！',
           path: ''
+        },
+        {
+          title: '人才教练线下客户现场辅导',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/2481635738105_.pic.jpg',
+          path: 'news8'
         },
         {
           title: '签约湖南省赢在演说家教育机构全国事业合伙人',

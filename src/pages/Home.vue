@@ -21,7 +21,7 @@
           <a-icon type="right-circle" />
         </div>
         <div>
-          <img src="@/assets/images/ca1.jpeg" alt="">
+          <img src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/2731635817947_.pic_hd.jpg" alt="">
         </div>
         <div>
           <img src="@/assets/images/ca2.jpeg" alt="">
@@ -123,8 +123,8 @@
               <img :src="newsList[0].img" alt="">
               <h4>{{newsList[0].title}}</h4>
               <p>{{newsList[0].abstract}}</p>
-            </div> -->
-            <a href="https://mp.weixin.qq.com/s/9i2GepdmVCQiIJl5GvzGog" class="hot-news" target="_blank">
+            </div> https://mp.weixin.qq.com/s/9i2GepdmVCQiIJl5GvzGog-->
+            <a href="javascript:" class="hot-news" target="_blank">
               <img :src="newsList[0].img" alt="">
               <h4>{{newsList[0].title}}</h4>
               <p>{{newsList[0].abstract}}</p>
@@ -330,8 +330,9 @@ export default {
           path: ''
         },
         {
-          title: '南京天众汽车增长主题培训活动',
-          path: 'news1'
+          title: '人才教练线下客户现场辅导',
+          img: require('@/assets/images/news6/2.jpeg'),
+          path: 'news8'
         },
         // {
         //   title: '南京饰家美软装公司增长主题培训活动',
@@ -357,6 +358,10 @@ export default {
           title: '第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕',
           img: require('@/assets/images/news6/2.jpeg'),
           path: 'news6'
+        },
+        {
+          title: '南京天众汽车增长主题培训活动',
+          path: 'news1'
         }
       ]
       // libraryWidth: 8 * this.personList.length + 'rem'

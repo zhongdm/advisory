@@ -140,6 +140,11 @@ const router = new Router({
       name: 'News7',
       component: () => import('@/pages/news/News7.vue')
     },
+    {
+      path: '/news8',
+      name: 'News8',
+      component: () => import('@/pages/news/News8.vue')
+    },
   ]
 })
 
