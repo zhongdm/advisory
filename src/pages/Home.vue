@@ -119,16 +119,16 @@
       <a href="javascript:void(0)" @click="$router.push('newsList')" class="more-link" style="float:right;">更多>></a></h3>
       <a-row type="flex" :gutter="16">
           <a-col :xs="24" :md="12">
-            <!-- <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
+             <div class="hot-news" v-if="newsList.length > 0" @click="showNews(newsList[0])">
               <img :src="newsList[0].img" alt="">
               <h4>{{newsList[0].title}}</h4>
               <p>{{newsList[0].abstract}}</p>
-            </div> https://mp.weixin.qq.com/s/9i2GepdmVCQiIJl5GvzGog-->
-            <a href="javascript:" class="hot-news" target="_blank">
+            </div>
+<!--            <a href="javascript:" class="hot-news" target="_blank">
               <img :src="newsList[0].img" alt="">
               <h4>{{newsList[0].title}}</h4>
               <p>{{newsList[0].abstract}}</p>
-            </a>
+            </a>-->
             <ul class="news-list">
               <li v-for="(item, index) in newsList.slice(1, 3)" :key="index"><a @click="showNews(item)">{{item.title}}</a><a-icon class="icon" type="right" /></li>
             </ul>
@@ -185,11 +185,11 @@ export default {
       ],
       businessList: [
         {
-          img: require('@/assets/images/business1@2x.png'),
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/black-3509513_1920_gaitubao_335x250.jpg',
           title: '战略引领'
         },
         {
-          img: require('@/assets/images/business2@2x.png'),
+          img: require('@/assets/images/business1@2x.png'),
           title: '人才驱动'
         },
         {
@@ -205,7 +205,7 @@ export default {
         //   title: '高管圆桌汇'
         // },
         {
-          img: require('@/assets/images/business6@2x.png'),
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/office-1516329_1920_gaitubao_335x250.jpg',
           title: '闻动私董会'
         }
         // ,

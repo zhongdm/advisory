@@ -1,6 +1,7 @@
 <template>
   <div class="list-container">
-    <a href="javascript:" target="_blank" class="main-news list-item" v-if="newsList.length > 0">
+    <div class="main-news list-item" v-if="newsList.length > 0"
+         @click="showMenu(newsList[0])">
       <a-row type="flex">
         <a-col :span="24">
           <div class="clip-img">
@@ -20,7 +21,7 @@
           </div>
         </a-col>
       </a-row>
-    </a>
+    </div>
     <div class="news-container">
       <a-row type="flex" :gutter="16">
         <a-col :xs="24" :lg="6" :md="6" v-for="(item, index) in newsList.slice(1)" :key="index">
@@ -69,7 +70,8 @@ export default {
         },
         {
           title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
-          img: require('@/assets/images/hotNew-11.jpg')
+          img: require('@/assets/images/hotNew-11.jpg'),
+          path: ''
         },
         {
           title: '人才教练线下客户现场辅导',
@@ -170,6 +172,7 @@ p
   color #737373
 img
   width 100%
+
 
 @media screen and (min-width: 769px) {
   .clip-img {

@@ -2,9 +2,9 @@
 <div>
   <div class="detail-wrapper wrapper">
     <picture>
-      <source class="mobile-img" srcset="@/assets/images/business2@2x.png" media="(max-width: 768px)">
-      <source class="mobile-img" srcset="@/assets/images/bs-web2.jpg" media="(min-width: 769px)">
-      <img class="mobile-img" srcset="@/assets/images/bs-web2.jpg" alt="pic">
+      <source class="mobile-img" srcset="@/assets/images/business1@2x.png" media="(max-width: 768px)">
+      <source class="mobile-img" srcset="@/assets/images/bs-web1.jpg" media="(min-width: 769px)">
+      <img class="mobile-img" srcset="@/assets/images/business1@2x.png" alt="pic">
     </picture>
     <h3 class="detail-title">人才驱动</h3>
     <div class="content-container">

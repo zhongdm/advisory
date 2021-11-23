@@ -2,9 +2,9 @@
 <div>
   <div class="detail-wrapper wrapper">
     <picture>
-      <source class="mobile-img" srcset="@/assets/images/business6@2x.png" media="(max-width: 768px)">
-      <source class="mobile-img" srcset="@/assets/images/bs-web6.jpg" media="(min-width: 769px)">
-      <img class="mobile-img" srcset="@/assets/images/bs-web6.jpg" alt="pic">
+      <source class="mobile-img" srcset="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/office-1516329_1920_gaitubao_335x250.jpg" media="(max-width: 768px)">
+      <source class="mobile-img" srcset="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/office-1516329_1920_gaitubao_503x375.jpg" media="(min-width: 769px)">
+      <img class="mobile-img" srcset="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/office-1516329_1920_gaitubao_335x250.jpg" alt="pic">
     </picture>
     <h3 class="detail-title">闻动私董会</h3>
     <div>
