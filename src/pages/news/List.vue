@@ -57,10 +57,19 @@ export default {
         //   path: 'hotNews'
         // },
         {
+          title: '参观西安建工集团建筑装饰工程公司',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%872.png',
+          content: '应西安建工集团建筑装饰工程分公司总经理王健先生邀请，闻动管理顾问公司创始人、首席顾问毛雷先生于2021年11月22日实地参观访问了该公司，双方领导人进行了友好、亲切、愉快地交流，共同探讨了关于企业“战略引领、人才驱动和组织赋能”等相关话题。',
+          path: 'news10'
+        },
+        {
+          title: '出席西安《演讲口才与领导力提升》活动',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%871.png',
+          path: 'news9'
+        },
+        {
           title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
-          img: require('@/assets/images/hotNew-11.jpg'),
-          content: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！',
-          path: ''
+          img: require('@/assets/images/hotNew-11.jpg')
         },
         {
           title: '人才教练线下客户现场辅导',
@@ -161,7 +170,6 @@ p
   color #737373
 img
   width 100%
-
 
 @media screen and (min-width: 769px) {
   .clip-img {

@@ -266,7 +266,7 @@ export default {
             {
               type: '',
               key: 'business31',
-              name: '教练赋能',
+              name: '组织赋能',
               path: 'business31'
             },
             {

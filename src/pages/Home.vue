@@ -194,7 +194,7 @@ export default {
         },
         {
           img: require('@/assets/images/business3@2x.png'),
-          title: '教练赋能'
+          title: '组织赋能'
         },
         // {
         //   img: require('@/assets/images/business4@2x.png'),
@@ -274,7 +274,7 @@ export default {
           img: require('@/assets/images/case3-m.png'),
           webImg: require('@/assets/images/case3-web.png'),
           title: '某生产制造型企业人才盘点项目的整体思路',
-          content: '该企业从人才盘点项目切入，上接公司发展战略需求，通过人才驱动机制的构建，明确了公司未来三年人才战略和人才梯队建设方略。下接内外部针对核心团队的教练赋能系统，从而有效提升组织核心能力，为战略落地提供有力支撑。'
+          content: '该企业从人才盘点项目切入，上接公司发展战略需求，通过人才驱动机制的构建，明确了公司未来三年人才战略和人才梯队建设方略。下接内外部针对核心团队的组织赋能系统，从而有效提升组织核心能力，为战略落地提供有力支撑。'
         },
         {
           path: 'caseone',
@@ -324,10 +324,15 @@ export default {
         //   path: 'hotNews'
         // },
         {
+          title: '出席西安《演讲口才与领导力提升》活动',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%871.png',
+          abstract: '闻动管理顾问公司创始人毛雷先生应邀于2021年11月20、21日，在陕西西安交通大学学术交流中心，出席水木名师主办的《演讲口才与领导力提升》专题模块线下大课。',
+          path: 'news9'
+        },
+        {
           title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
           img: require('@/assets/images/hotNew-11.jpg'),
-          abstract: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！',
-          path: ''
+          abstract: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！'
         },
         {
           title: '人才教练线下客户现场辅导',
@@ -338,16 +343,22 @@ export default {
         //   title: '南京饰家美软装公司增长主题培训活动',
         //   path: 'news2'
         // },
-        {
-          title: '江苏苏企联邀请闻动顾问给会员企业做增长主题私董会活动',
-          img: require('@/assets/images/news5/4.jpeg'),
-          path: 'news5',
-          abstract: '以“服务江苏企业、发展江苏企业、成就江苏企业”为使命，实现所有企业家成员的共建、共享、共赢。'
-        },
+        // {
+        //   title: '江苏苏企联邀请闻动顾问给会员企业做增长主题私董会活动',
+        //   img: require('@/assets/images/news5/4.jpeg'),
+        //   path: 'news5',
+        //   abstract: '以“服务江苏企业、发展江苏企业、成就江苏企业”为使命，实现所有企业家成员的共建、共享、共赢。'
+        // },
         //  {
         //   title: '如何实现客户增长',
         //   path: 'news3'
         // },
+        {
+          title: '参观西安建工集团建筑装饰工程公司',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%872.png',
+          path: 'news10',
+          abstract: '应西安建工集团建筑装饰工程分公司总经理王健先生邀请，闻动管理顾问公司创始人、首席顾问毛雷先生于2021年11月22日实地参观访问了该公司，双方领导人进行了友好、亲切、愉快地交流，共同探讨了关于企业“战略引领、人才驱动和组织赋能”等相关话题。'
+        },
         {
           title: '签约湖南省赢在演说家教育机构全国事业合伙人',
           img: require('@/assets/images/news7/1.jpg'),
@@ -359,10 +370,10 @@ export default {
           img: require('@/assets/images/news6/2.jpeg'),
           path: 'news6'
         },
-        {
-          title: '南京天众汽车增长主题培训活动',
-          path: 'news1'
-        }
+        // {
+        //   title: '南京天众汽车增长主题培训活动',
+        //   path: 'news1'
+        // }
       ]
       // libraryWidth: 8 * this.personList.length + 'rem'
     }
