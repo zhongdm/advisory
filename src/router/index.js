@@ -155,6 +155,16 @@ const router = new Router({
       name: 'News10',
       component: () => import('@/pages/news/News10.vue')
     },
+    {
+      path: '/news11',
+      name: 'News11',
+      component: () => import('@/pages/news/News11.vue')
+    },
+    {
+      path: '/news12',
+      name: 'News12',
+      component: () => import('@/pages/news/News12.vue')
+    },
   ]
 })
 

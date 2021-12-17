@@ -70,7 +70,7 @@
         <a-col :span="5">
           <a-row>
             <a-col :span="12"><a @click="$router.push('business1')">顾问内容</a></a-col>
-            <a-col :span="12"><a @click="$router.push('caseList')">闻动案例</a></a-col>
+            <a-col :span="12"><a @click="$router.push('caseList')">顾问案例</a></a-col>
           </a-row>
           <a-row>
             <a-col :span="12"><a @click="$router.push('newsList')">闻动资讯</a></a-col>
@@ -109,7 +109,7 @@
         </a-col>
         <a-col :span="3">
           <a-row>
-            <a-col :span="24"><a @click="$router.push('caseList')" class="height-equal">闻动案例</a></a-col>
+            <a-col :span="24"><a @click="$router.push('caseList')" class="height-equal">顾问案例</a></a-col>
             <a-col :span="24"><a @click="$router.push('about')" class="height-equal">关于闻动</a></a-col>
           </a-row>
         </a-col>
@@ -185,7 +185,7 @@
           </ul> -->
         </div>
         <div class="footer-item">
-          <h4>闻动案例</h4>
+          <h4>顾问案例</h4>
           <!-- <ul>
             <li><a href="javascript:void(0);" @click="footerClick('caseList', 'case')">经典案例</a></li>
           </ul> -->
@@ -301,7 +301,7 @@ export default {
         },
         {
           key: 'caseList',
-          name: '闻动案例',
+          name: '顾问案例',
           type: 'appstore',
           path: 'caseList',
           // img: require('@/assets/images/icon-case@2x.png'),

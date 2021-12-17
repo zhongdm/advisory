@@ -67,7 +67,7 @@
     </div>
     <div class="seperator"></div>
     <div class="case-container container" id="case">
-      <h3><img src="@/assets/images/icon-case@2x.png" alt="" class="icon-img">闻动案例
+      <h3><img src="@/assets/images/icon-case@2x.png" alt="" class="icon-img">顾问案例
       <a href="javascript:void(0)" @click="$router.push('caseList')" class="more-link" style="float:right;">更多>></a></h3>
       <div class="case-wrapper">
         <div class="case-info">
@@ -172,7 +172,7 @@ export default {
         },
         {
           img: require('@/assets/images/classicCase@2x.png'),
-          title: '闻动案例',
+          title: '顾问案例',
           path: 'caseList',
           key: 'case',
         },
@@ -324,6 +324,12 @@ export default {
         //   path: 'hotNews'
         // },
         {
+          title: '实地考察河北上桥生物科技有限公司',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/120901.png',
+          abstract: '2021年12月7~9号，闻动顾问创始人毛雷先生应河北上桥生物科技有限公司总经理郭江辉先生的邀请，前往该公司实地考察项目，和公司相关核心团队负责人沟通公司现状，了解明年发展战略和新业务河北金至诚生物科技有限公司的相关情况。',
+          path: 'news11'
+        },
+        {
           title: '出席西安《演讲口才与领导力提升》活动',
           img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%871.png',
           abstract: '闻动管理顾问公司创始人毛雷先生应邀于2021年11月20、21日，在陕西西安交通大学学术交流中心，出席水木名师主办的《演讲口才与领导力提升》专题模块线下大课。',
@@ -334,11 +340,11 @@ export default {
           img: require('@/assets/images/hotNew-11.jpg'),
           abstract: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！'
         },
-        {
-          title: '人才教练线下客户现场辅导',
-          img: require('@/assets/images/news6/2.jpeg'),
-          path: 'news8'
-        },
+        // {
+        //   title: '人才教练线下客户现场辅导',
+        //   img: require('@/assets/images/news6/2.jpeg'),
+        //   path: 'news8'
+        // },
         // {
         //   title: '南京饰家美软装公司增长主题培训活动',
         //   path: 'news2'
@@ -354,6 +360,12 @@ export default {
         //   path: 'news3'
         // },
         {
+          title: '达成2022年闻动顾问和湖南赢在演说家文化传播有限公司的战略合作',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/120904.png',
+          path: 'news12',
+          abstract: '受湖南赢在演说家文化传播有限公司总经理刘定先生的邀请，闻动顾问创始人毛雷先生于2021年12月10日~12日前往贵公司考察、交流，双方愉快达成战略合作意向，将共同开启2022年闻动顾问在长沙的“企业诊断”、“人才工坊”和“项目顾问”等专项产品的战略合作。同时，闻动顾问也邀请湖南赢在演说家的成熟产品进军江苏市场，实现双方共赢。'
+        },
+        {
           title: '参观西安建工集团建筑装饰工程公司',
           img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%872.png',
           path: 'news10',
@@ -365,11 +377,11 @@ export default {
           path: 'news7',
           abstract: '闻动顾问创始人毛雷先生于2021年7月3日正式签约湖南省赢在演说家教育机构全国事业合伙人，同时荣获赢在演说领袖学院颁发的“演说影响力”大奖荣誉证书。'
         },
-        {
-          title: '第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕',
-          img: require('@/assets/images/news6/2.jpeg'),
-          path: 'news6'
-        },
+        // {
+        //   title: '第七期闻动私董会关于“增长策略”主题活动顺利落下帷幕',
+        //   img: require('@/assets/images/news6/2.jpeg'),
+        //   path: 'news6'
+        // },
         // {
         //   title: '南京天众汽车增长主题培训活动',
         //   path: 'news1'

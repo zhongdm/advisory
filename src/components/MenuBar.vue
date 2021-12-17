@@ -35,7 +35,7 @@ export default {
         },
         {
           key: 'case',
-          name: '闻动案例'
+          name: '顾问案例'
         },
         {
           key: 'news',
