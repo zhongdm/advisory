@@ -9,7 +9,9 @@
       <article class="text-indent">
         企业诊断输出的项目成果是：《企业诊断报告》，在诊断报告中，闻动顾问不仅阐述企业现状，提出存在问题，还分析问题背后产生的原因，提出解决问题的方向和策略，明确闻动顾问对解决问题的观点和建议，供客户决策参考。
       </article>
-      <img style="text-align: center;" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/qiyezhenduan.png" alt="">
+      <div>
+      <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/qiyezhenduan.png" alt="">
+      </div>
     </section>
     <section>
       <h3>人才工坊</h3>
@@ -148,4 +150,17 @@
 .mission-container
   p
     text-indent 0
+
+.flex-img {
+  display: block;
+  margin: 0 auto;
+  object-fit: none;
+}
+
+@media screen and (max-width: 576px) {
+  .flex-img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
 </style>
