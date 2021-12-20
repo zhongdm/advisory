@@ -34,6 +34,10 @@ export default {
           name: '顾问内容'
         },
         {
+          key: 'method',
+          name: '顾问方式'
+        },
+        {
           key: 'case',
           name: '顾问案例'
         },

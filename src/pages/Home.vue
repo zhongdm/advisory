@@ -30,7 +30,7 @@
     </div>
     <div class="home-sub-menu container">
       <a-row type="flex" justify="space-around">
-        <a-col :xs="6" :lg="6 " v-for="(item, index) in subMenuList" :key="index">
+        <a-col :xs="6" :lg="6" v-for="(item, index) in subMenuList" :key="index">
           <div class="list-item bs-nav" @click="subMenuClick(item)">
             <img :src="item.img" alt="" class="">
             <span>{{item.title}}</span>
@@ -169,6 +169,12 @@ export default {
           title: '顾问内容',
           key: 'business',
           path: 'business11'
+        },
+        {
+          img: require('@/assets/images/business@2x.png'),
+          title: '顾问方式',
+          key: 'method',
+          path: 'method'
         },
         {
           img: require('@/assets/images/classicCase@2x.png'),

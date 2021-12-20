@@ -300,6 +300,12 @@ export default {
           // selectedImg: require('@/assets/images/icon-bs.png')
         },
         {
+          key: 'method',
+          name: '闻动方式',
+          type: 'schedule',
+          path: 'method'
+        },
+        {
           key: 'caseList',
           name: '顾问案例',
           type: 'appstore',

@@ -101,6 +101,11 @@ const router = new Router({
       component: () => import('@/pages/AboutUs.vue')
     },
     {
+      path: '/method',
+      name: 'method',
+      component: () => import('@/pages/Method.vue')
+    },
+    {
       path: '/newsList',
       name: 'NewsList',
       component: () => import('@/pages/news/List'),
