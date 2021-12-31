@@ -30,7 +30,7 @@
     </div>
     <div class="home-sub-menu container">
       <a-row type="flex" justify="space-around">
-        <a-col :xs="6" :lg="6" v-for="(item, index) in subMenuList" :key="index">
+        <a-col :xs="3" :lg="3" v-for="(item, index) in subMenuList" :key="index">
           <div class="list-item bs-nav" @click="subMenuClick(item)">
             <img :src="item.img" alt="" class="">
             <span>{{item.title}}</span>
@@ -323,12 +323,12 @@ export default {
         }
       ],
       newsList: [
-        // {
-        //   title: '闻动顾问之江苏益和股权激励项目顺利启动！',
-        //   img: require('@/assets/images/hotNew-1.jpeg'),
-        //   abstract: '江苏益和股权激励项目，2019年7月25日在宿迁江山大酒店举行了项目启动会。',
-        //   path: 'hotNews'
-        // },
+        {
+          title: '参访深圳换商书院',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/4131640901574_.pic_1640912357877.pic.jpg',
+          abstract: '2021年12月28日、29日，闻动管理顾问公司创始人毛雷先生应换商书院高圆圆总经理的邀请，参加书院第五界企业家交流活动，并和书院创始人徐丞功先生深入交流关于换商的新理念。',
+          path: 'news13'
+        },
         {
           title: '实地考察河北上桥生物科技有限公司',
           img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/120901.png',
@@ -341,11 +341,11 @@ export default {
           abstract: '闻动管理顾问公司创始人毛雷先生应邀于2021年11月20、21日，在陕西西安交通大学学术交流中心，出席水木名师主办的《演讲口才与领导力提升》专题模块线下大课。',
           path: 'news9'
         },
-        {
-          title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
-          img: require('@/assets/images/hotNew-11.jpg'),
-          abstract: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！'
-        },
+        // {
+        //   title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
+        //   img: require('@/assets/images/hotNew-11.jpg'),
+        //   abstract: '金色未来人力资源集团咨询培训资深合伙人，闻动顾问创始人毛雷先生于2021年9月24、25日在苏州主训金色未来《9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营》，取得圆满成功！'
+        // },
         // {
         //   title: '人才教练线下客户现场辅导',
         //   img: require('@/assets/images/news6/2.jpeg'),

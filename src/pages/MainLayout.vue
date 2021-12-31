@@ -301,7 +301,7 @@ export default {
         },
         {
           key: 'method',
-          name: '闻动方式',
+          name: '顾问方式',
           type: 'schedule',
           path: 'method'
         },

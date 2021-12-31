@@ -10,7 +10,7 @@
         企业诊断输出的项目成果是：《企业诊断报告》，在诊断报告中，闻动顾问不仅阐述企业现状，提出存在问题，还分析问题背后产生的原因，提出解决问题的方向和策略，明确闻动顾问对解决问题的观点和建议，供客户决策参考。
       </article>
       <div>
-      <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/qiyezhenduan.png" alt="">
+        <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/qiyezhenduan.png" alt="">
       </div>
     </section>
     <section>
@@ -18,7 +18,9 @@
       <article class="text-indent">
         人才工坊是人才工作坊的简称，是闻动顾问为大多数企业定制的人才专题教练课程。人才工坊以企业人力资源管理专业为主题，从招人、选人、用人、育人、留人、辞人六个维度，深度解析人才管理的问题和陷阱，并选择现场真实的案例加以解构，让案例的主人真实再现人才管理的困惑，并一步一步剖析人才管理背后深层次的问题，通过两天一夜的特训，不仅当事人，所有参与人才工坊学习的高管都收获良多。
       </article>
-      <img src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/rencaigongfang.png" alt="">
+      <div>
+        <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/rencaigongfang.png" alt="">
+      </div>
     </section>
     <section>
       <h3>项目顾问</h3>
@@ -34,7 +36,9 @@
       <article class="text-indent">
         能力模型项目是基于有了清晰的商业战略和人才战略之后，重新制定实现商业战略目标所必须的核心竞争能力，设计核心团队必须具备的能力素质模型，明确战略目标达成所需的能力边界，并不断赋能团队，通过刻意练习强化团队具备设定的核心能力，支持商业战略目标的实现。
       </article>
-      <img src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/xiangmuguwen.png" alt="">
+      <div>
+        <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/xiangmuguwen.png" alt="">
+      </div>
     </section>
   </div>
   <a-row type="flex">
