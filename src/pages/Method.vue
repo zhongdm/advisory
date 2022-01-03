@@ -23,6 +23,24 @@
       </div>
     </section>
     <section>
+      <h3>战略工坊</h3>
+      <article class="text-indent">
+        战略工坊是战略工作坊的简称，是闻动顾问为客户解决战略问题的专项教练课程。该教练课程从对战略的认知、好战略还是坏战略的战略评估方法、正确的战略制定及战略执行等四个维度，深度解析源于哈弗商学院的BLM业务领先模型，并通过IBM 验证后被华为引进的BLM模型的解构，以经典案例和现场案例相结合的方式，帮助客户完成对业务战略的深度思考。
+      </article>
+      <div>
+        <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/zhanluegongfang.png" alt="">
+      </div>
+    </section>
+    <section>
+      <h3>赋能工坊</h3>
+      <article class="text-indent">
+        赋能工坊是赋能工作坊的简称，是闻动顾问为客户解决战略执行问题而专门设计的教练课程。本课程从完成战略执行的能力素质模型入手，首先界定实现战略的核心竞争力，接着从赋能的教练模型、工具出发，解构赋能的最佳方法，最后通过刻意练习完成赋能过程控制的完整闭环。
+      </article>
+      <div>
+        <img class="flex-img" src="https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/funenggongfang.png" alt="">
+      </div>
+    </section>
+    <section>
       <h3>项目顾问</h3>
       <h4>A.商业战略</h4>
       <article class="text-indent">
