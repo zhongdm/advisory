@@ -324,6 +324,12 @@ export default {
       ],
       newsList: [
         {
+          title: '击穿战略的底层逻辑',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/2022147.png',
+          abstract: '2021年12月25、26日，闻动顾问创始人毛雷先生应南京大学安高商学院实战MBA总裁研修班的邀请，为学员做了为期两天的闻动顾问“战略工坊”训练营活动，并担任本期训练营的战略教练。',
+          path: 'news14'
+        },
+        {
           title: '参访深圳换商书院',
           img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/4131640901574_.pic_1640912357877.pic.jpg',
           abstract: '2021年12月28日、29日，闻动管理顾问公司创始人毛雷先生应换商书院高圆圆总经理的邀请，参加书院第五界企业家交流活动，并和书院创始人徐丞功先生深入交流关于换商的新理念。',
@@ -335,12 +341,12 @@ export default {
           abstract: '2021年12月7~9号，闻动顾问创始人毛雷先生应河北上桥生物科技有限公司总经理郭江辉先生的邀请，前往该公司实地考察项目，和公司相关核心团队负责人沟通公司现状，了解明年发展战略和新业务河北金至诚生物科技有限公司的相关情况。',
           path: 'news11'
         },
-        {
-          title: '出席西安《演讲口才与领导力提升》活动',
-          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%871.png',
-          abstract: '闻动管理顾问公司创始人毛雷先生应邀于2021年11月20、21日，在陕西西安交通大学学术交流中心，出席水木名师主办的《演讲口才与领导力提升》专题模块线下大课。',
-          path: 'news9'
-        },
+        // {
+        //   title: '出席西安《演讲口才与领导力提升》活动',
+        //   img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/%E5%9B%BE%E7%89%871.png',
+        //   abstract: '闻动管理顾问公司创始人毛雷先生应邀于2021年11月20、21日，在陕西西安交通大学学术交流中心，出席水木名师主办的《演讲口才与领导力提升》专题模块线下大课。',
+        //   path: 'news9'
+        // },
         // {
         //   title: '9月公开课 | 智能制造标杆游学 —人才选用育留教练训练营',
         //   img: require('@/assets/images/hotNew-11.jpg'),
