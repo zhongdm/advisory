@@ -64,6 +64,12 @@ export default {
           path: 'news14'
         },
         {
+          title: '赢在演说家教育集团聘书',
+          img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/4681642735373_.pic.jpg',
+          content: '2021年已匆匆走过，在2022年新年来临之际，闻动顾问创始人毛雷先去收到了来自湖南赢在演说家教育集团颁发的聘书，聘请毛雷先去担任集团人才教练一职，聘期三年，自2022年1月12日起。',
+          path: 'news15'
+        },
+        {
           title: '参访深圳换商书院',
           img: 'https://myserve.oss-cn-hangzhou.aliyuncs.com/wd/4131640901574_.pic_1640912357877.pic.jpg',
           // content: '2021年12月28日、29日，闻动管理顾问公司创始人毛雷先生应换商书院高圆圆总经理的邀请，参加书院第五界企业家交流活动，并和书院创始人徐丞功先生深入交流关于换商的新理念。',
